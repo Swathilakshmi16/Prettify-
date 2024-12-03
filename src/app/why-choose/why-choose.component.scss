@@ -1,0 +1,71 @@
+.whychoosettl{
+    background: linear-gradient(to left, #ffe6d5, #fff);
+}
+.content{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.img{
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+.whychooseimg1 {
+    width: 700px;
+    height: 700px;
+}
+.mainh1{
+    color: #ff7043; 
+    font-size: 35px;
+    font-weight: 500;
+    font-family: "DM Serif Display", serif;
+  
+}
+
+.para{
+    margin-top: 20px;
+    margin-left: 20px;
+    border-color:rgb(112, 110, 106);
+    background-color: #ffe6d5;
+    padding: 18px;
+    width: 500px;
+    height: 170px;
+    border-radius: 20px;
+    box-shadow: 10px 10px 10px5px rgb(48, 48, 48);
+    justify-content: left;
+}
+.mainsubpara{
+font-size: 20px;
+font-family: "DM Serif Display", serif;
+    font-style: italic;
+font-weight: 200;
+}
+
+.conth1{
+    font-size: 20px;
+    font-family: "DM Serif Display", serif;
+
+    // font-family: "Domine", serif;
+    font-weight: 600;
+    color:rgb(13, 9, 11); 
+    margin-left: 9px;
+  
+}
+
+.contpara{
+    font-size: 18px;
+    font-family: "DM Serif Display", serif;
+    font-style: italic;
+    font-weight: 100;
+    
+}
+.para{
+    display: flex;
+    
+}
+.para:hover{
+    transform: scale(1.1);
+}
+.logo img{
+    width: 30px;
+    height: 30px;
+}

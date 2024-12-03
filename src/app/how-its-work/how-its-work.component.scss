@@ -1,0 +1,74 @@
+
+#howitwork {
+    padding: 60px 20px;
+    background-color: #fff;
+  }
+  
+  .heading p {
+    font-size: 36px;
+    color: #ff7043;   
+    font-size: 35px;
+    font-weight: 500;
+    font-family: "Domine", serif;
+    text-align: center;
+    margin-bottom: 40px;
+    letter-spacing: 1px;
+    padding-bottom: 5px;
+  }
+  
+  
+  .steps{
+    margin-bottom: 50px;
+    
+  }
+  .steps:hover{
+    transform: scale(1.1);
+  }
+  
+  .hiw {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    padding: 20px;
+    background: linear-gradient(to right, #ffe6d5, #fff);
+    border-radius: 15px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .step {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+    background-color: #ff7043; 
+    border-radius:100%;
+    width: 130px;
+    height: 80px;
+    margin-right: 30px;
+    margin-left: 20px;
+    padding-top: 15px;
+  }
+  
+  .hiwcont {
+    flex: 3;
+    text-align: left;
+    padding-left: 20px;
+  }
+  
+  .hiwcont p:first-child {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .hiwcont p:last-child {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+  }
+  
+
