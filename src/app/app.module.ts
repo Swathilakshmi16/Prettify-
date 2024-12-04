@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { WhyChooseComponent } from './why-choose/why-choose.component';
 import { HowItsWorkComponent } from './how-its-work/how-its-work.component';
 import { LearnComponent } from './learn/learn.component';
+import { FooterComponent } from './footer/footer.component';
 
 
 
@@ -15,6 +16,7 @@ import { LearnComponent } from './learn/learn.component';
     WhyChooseComponent,
     HowItsWorkComponent,
     LearnComponent,
+    FooterComponent,
  
   ],
   imports: [
