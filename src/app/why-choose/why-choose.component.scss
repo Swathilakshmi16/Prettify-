@@ -10,8 +10,9 @@
 .mainh1{
     color: #ff7043; 
     font-size: 43px;
-    font-weight: 500;
+    font-weight: 700;
     font-family: "DM Serif Display", serif;
+    text-shadow: 6px 6px 7px rgba(0, 0, 0, 0.2);
 }
 
 .para{
@@ -72,10 +73,7 @@
     position: relative;
 }
 .image img{
-    width: 45%;
-    height:45%;
-    border: 10px solid #f3f2f1;
-    margin: 10px;
+   
 }
 .wcimg1{
     position: absolute;
@@ -87,6 +85,10 @@
     animation-duration: 10s;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
+    width: 45%;
+    height:45%;
+    border: 10px solid #f0c6b9;
+    margin: 10px;
 
 }
 .wcimg2{
@@ -99,6 +101,10 @@
     animation-duration: 10s;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
+    width: 45%;
+    height:45%;
+    border: 10px solid #f0c6b9;
+    margin: 10px;
 }
 .wcimg3{
     position: absolute;
@@ -110,6 +116,10 @@
     animation-duration: 9s;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
+    width: 45%;
+    height:45%;
+    border: 10px solid #f0c6b9;
+    margin: 10px;
 }
 .wcimg4{
     position: absolute;
@@ -121,6 +131,10 @@
     animation-duration: 9s;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
+    width: 45%;
+    height:45%;
+    border: 10px solid #f0c6b9;
+    margin: 10px;
 }
 @keyframes imagelr{
     0% {

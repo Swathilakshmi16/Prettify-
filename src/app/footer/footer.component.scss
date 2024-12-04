@@ -1,13 +1,11 @@
 
 #footer {
-    background-color: #ffe6d5;
+    background-color: #ffcdac;
     margin-bottom: 5px;
-    padding: 60px 0;
+    padding-top: 60px;
 }
 .logo img{
     max-width: 190px;
-    background-color:hsl(24, 100%, 92%) ;
-  
 }
 .sociallogo img {
     max-width: 50px;
@@ -19,30 +17,27 @@
 .logo{
     text-align: center;
 }
-#footer .h1 {
+ .h1 {
     font-size: 1.5rem;
     margin-bottom: 15px;
     font-weight: bold;
 }
-.email{
-    font-size: 20px;
-}
-#footer p {
-    margin: 5px 0;
+
+ .ab{
+    line-height: 1.5;
     font-size: 18px;
     font-family: "DM Serif Display", serif;
     font-style: italic;
-    font-weight: 100;
-    
-}
+    display: flex;
 
- .address {
-    line-height: 1.5;
+}
+.ab p:first-child{
+    color:#ff7043;
+    
 }
 
  .contact {
     display: flex;
-    align-items: center;
 }
 
 .contact img {
@@ -53,12 +48,18 @@
 }
 
  .number {
-    font-size: 10px;
+    font-size: 18px;
     font-weight: bold;
     color:#ff7043;
+    font-weight: 300px;
 
 }
-
+.touch{
+    line-height: 1.5;
+    font-size: 18px;
+    font-family: "DM Serif Display", serif;
+    font-style: italic;
+}
  .request {
    
     font-weight: bold;
@@ -68,18 +69,10 @@
    
     margin-top: 50px;
     text-align: center;
-    font-size: 9px;
+    font-size: 14px;
+    padding-bottom: 3px;
 
 }
- .seo {
-    font-weight: bold;
-    text-decoration: none;
-    color: #ff7043;
-}
-.ab{
-    display: flex;
-}
-.ab p:first-child{
-    color:#ff7043;
-    
-}
+
+
+
