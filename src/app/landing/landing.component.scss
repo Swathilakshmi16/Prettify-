@@ -1,0 +1,146 @@
+.land{
+    background: linear-gradient(to left, #ffe6d5,#fff);
+}
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+    gap: 20px;
+    margin-top: -15px;
+   
+}
+
+
+// .image-container {
+//     position: relative;
+// }
+
+
+.main-image {
+    border-radius: 50%;
+    margin-top: 106px;
+    margin-left: 100px;
+    position: relative;
+    animation: rotateRight 1s ease-out forwards;
+    z-index: 0;
+    border: 5px solid rgb(73, 165, 73);
+    
+}
+
+@keyframes rotateRight {
+    0% {
+        transform: rotate(180deg);
+        width: 100px;
+        height: 100px;
+    }
+    100% {
+        transform: rotate(360deg);
+        width: 400px;
+        height: 400px;
+    }
+}
+
+.main-image1 {
+    width: 215px;
+    height: 215px;
+    border-radius: 50%;
+    border: 10px solid #f76c41;
+    margin-top: -142px;
+    object-fit: cover;
+    z-index: 3;
+    position: relative;
+}
+
+
+
+
+
+.ring-circle {
+    width: 155px;
+    height: 155px;
+    border: 26px solid #f76c41;
+    border-radius: 50%;
+    background-color: transparent;
+    margin-top: -990px;
+    margin-left: 330px;
+    z-index: 0;
+
+}
+
+
+.ring-circle1 {
+    width: 115px;
+    height: 118px;
+    border: 19px solid rgb(73, 165, 73);
+    border-radius: 50%;
+    background-color: transparent;
+    margin-top: -166px;
+    margin-left: 420px;
+    z-index: 1;
+    
+
+}
+
+
+.ring-circle2 {
+    width: 80px;
+    height: 80px;
+    border: 15px solid #f76c41;
+    border-radius: 50%;
+    background-color: transparent;
+    margin-left: 297px;
+    margin-top: -6px;
+    z-index: 1;
+}
+
+.title {
+    font-size: 350%;
+    margin-top: 10px;
+    padding: 20px;
+    font-weight: bold;
+    width: fit-content;
+    font-family: "EB Garamond", serif;
+    font-optical-sizing: auto;
+    text-shadow: 6px 6px 7px rgba(0, 0, 0, 0.2); 
+    color: #ff7043;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typing 2s steps(30, end);
+}
+
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+
+
+
+.subtitle {
+    font-size: 130%; 
+    padding: 22px;
+    font-weight: normal;
+    width: 684px;
+    margin-top: -18px;
+    text-align: justify;
+    font-family: "EB Garamond", serif;
+    word-wrap: break-word; 
+}
+
+.bullet{
+    display: flex;
+    
+
+}
+.bullets{
+    width:543px;
+    margin-left: 15%;
+}
+.content{
+    font-family: "EB Garamond", serif;
+    font-size: 110%; 
+    margin-left: 10px;
+}

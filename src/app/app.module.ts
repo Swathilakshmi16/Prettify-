@@ -7,6 +7,10 @@ import { WhyChooseComponent } from './why-choose/why-choose.component';
 import { HowItsWorkComponent } from './how-its-work/how-its-work.component';
 import { LearnComponent } from './learn/learn.component';
 import { FooterComponent } from './footer/footer.component';
+import { HeaderComponent } from './header/header.component';
+import { HomeComponent } from './home/home.component';
+import { LoginComponent } from './login/login.component';
+import { LandingComponent } from './landing/landing.component';
 
 
 
@@ -17,6 +21,10 @@ import { FooterComponent } from './footer/footer.component';
     HowItsWorkComponent,
     LearnComponent,
     FooterComponent,
+    HeaderComponent,
+    HomeComponent,
+    LoginComponent,
+    LandingComponent,
  
   ],
   imports: [
