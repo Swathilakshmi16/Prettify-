@@ -1,7 +1,6 @@
 #courses{
     background: linear-gradient(to right, #9ce0b7, #fff);
-    // height: vh;
-   
+
 }
 
 .card {
@@ -9,7 +8,6 @@
     border-radius: 15px;
     overflow: hidden;
     background: linear-gradient(145deg, #ffffff, #f0f0f0);
-    // box-shadow: 6px 6px 12px #b4f595, -6px -6px 12px #b4f595;
     transition: transform 0.4s, box-shadow 0.4s;
 
 }
@@ -32,8 +30,11 @@
 }
 
 .card-title {
-    font-size: 1.4rem;
-    color: #333;
+    font-family: "chillax";
+    margin-left: 9px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #197639;
     margin-bottom: 10px;
     text-transform: uppercase;
     font-family: 'Chillax';
@@ -41,13 +42,12 @@
 }
 
 .card-text {
-    color: #777;
-    font-size: 0.95rem;
-    line-height: 1.5;
-    margin-bottom: 20px;
-    font-family: 'lado';
+
+    font-size: 16px;
+    font-family: "Lato";
     font-style: italic;
-    font-weight: 500;
+    font-weight: 400;
+    color: #2b2626;
 }
 
 .btn {
@@ -57,6 +57,7 @@
     padding: 10px 20px;
     border-radius: 50px;
     font-size: 0.9rem;
+    font-family: "chillax";
     
 }
 
