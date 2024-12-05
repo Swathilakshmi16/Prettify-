@@ -2,16 +2,19 @@
     background: linear-gradient(to left, #9ce0b7,#fff);
 }
 
+.header{
+    padding-left: 10px;
+}
 .container {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 20px;
-    max-width: 1200px;
+    padding-bottom: 20px;
+    padding-top: 20px;
     margin: auto;
-    gap: 20px;
+  
     margin-top: -15px;
-  margin-left: 390px;
+
 
    
 }
@@ -69,8 +72,8 @@
     border: 26px solid #119d09;
     border-radius: 50%;
     background-color: transparent;
-    margin-top: -950px;
-    margin-left: -52px;
+    margin-top: -992px;
+    margin-left: 335px;
     z-index: 0;
 
 }
