@@ -5,11 +5,13 @@
 
 }
 .h1{
-    
     text-align: center;
-    color: #119d09;
     padding-top: 60px;
     padding-bottom: 40px;
+    color: #197639;
+    font-weight: 700;
+    font-size: 43px;
+    font-family: "Chillax";
 }
 
 .custom-btn {
@@ -21,7 +23,8 @@
     font-weight: bold;
     color: #fff; 
     transition: all 0.3s ease; 
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-family: "chillax"; 
 }
 
 .custom-btn:hover {
