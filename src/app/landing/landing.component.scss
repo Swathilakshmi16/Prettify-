@@ -1,6 +1,7 @@
 .land{
     background: linear-gradient(to left, #9ce0b7,#fff);
 }
+
 .container {
     display: flex;
     align-items: center;
@@ -10,14 +11,16 @@
     margin: auto;
     gap: 20px;
     margin-top: -15px;
-  margin-left: 63px;
+  margin-left: 390px;
+
    
 }
 
 
 .image-container {
     position: relative;
-    margin-left: -25px;
+    // margin-left: -25px;
+    // margin-right: 500px;
 }
 
 
@@ -66,8 +69,8 @@
     border: 26px solid #119d09;
     border-radius: 50%;
     background-color: transparent;
-    margin-top: -990px;
-    margin-left: 330px;
+    margin-top: -950px;
+    margin-left: -52px;
     z-index: 0;
 
 }

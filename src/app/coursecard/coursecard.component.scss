@@ -1,7 +1,7 @@
 #courses{
     background: linear-gradient(to right, #9ce0b7, #fff);
     // height: vh;
-
+   
 }
 
 .card {
@@ -11,6 +11,7 @@
     background: linear-gradient(145deg, #ffffff, #f0f0f0);
     // box-shadow: 6px 6px 12px #b4f595, -6px -6px 12px #b4f595;
     transition: transform 0.4s, box-shadow 0.4s;
+
 }
 
 .card:hover {
@@ -27,6 +28,7 @@
 .card-body {
     padding: 20px;
     text-align: center;
+
 }
 
 .card-title {
@@ -34,6 +36,8 @@
     color: #333;
     margin-bottom: 10px;
     text-transform: uppercase;
+    font-family: 'Chillax';
+    
 }
 
 .card-text {
@@ -41,6 +45,9 @@
     font-size: 0.95rem;
     line-height: 1.5;
     margin-bottom: 20px;
+    font-family: 'lado';
+    font-style: italic;
+    font-weight: 500;
 }
 
 .btn {
