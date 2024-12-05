@@ -3,7 +3,13 @@
     // .desktop-hide{
     //    display: none;
     // }
-
+.head{
+    position: fixed; 
+    top: 0;          
+    left: 0;        
+    width: 100%;     
+    z-index: 1000;
+}
 .header {
     background: linear-gradient(to left,#9ce0b7,#b5f0cd,#86d1a4);
     padding: 10px 20px;
@@ -14,6 +20,7 @@
     box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
     font-family:'Chillax';
    
+    
 }
 
 .logo img {
