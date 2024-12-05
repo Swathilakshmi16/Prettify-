@@ -1,0 +1,40 @@
+
+#courses{
+    background: linear-gradient(to right, #9ce0b7, #fff);
+    // height: vh;
+
+}
+.h1{
+    
+    text-align: center;
+    color: #119d09;
+    padding-top: 60px;
+    padding-bottom: 40px;
+}
+
+.custom-btn {
+    background-color: #119d09;
+    border: none;
+    border-radius: 30px; 
+    padding: 10px 30px;
+    font-size: 1.2rem; 
+    font-weight: bold;
+    color: #fff; 
+    transition: all 0.3s ease; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+}
+
+.custom-btn:hover {
+    background-color: #119d09;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2); 
+    transform: translateY(-3px);
+}
+
+.custom-btn:active {
+    transform: translateY(1px); 
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1); 
+}
+
+.button{
+    padding: 50px;
+}

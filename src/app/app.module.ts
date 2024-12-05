@@ -11,6 +11,9 @@ import { HeaderComponent } from './header/header.component';
 import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
 import { LandingComponent } from './landing/landing.component';
+import { CoursesComponent } from './courses/courses.component';
+import { OurAllCourseComponent } from './our-all-course/our-all-course.component';
+import { CoursecardComponent } from './coursecard/coursecard.component';
 
 
 
@@ -25,6 +28,9 @@ import { LandingComponent } from './landing/landing.component';
     HomeComponent,
     LoginComponent,
     LandingComponent,
+    CoursesComponent,
+    OurAllCourseComponent,
+    CoursecardComponent,
  
   ],
   imports: [
