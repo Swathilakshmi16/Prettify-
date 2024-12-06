@@ -24,21 +24,16 @@
 }
 
 
-.image-container {
+.image-container img {
     position: relative;
-    // margin-left: -25px;
-    // margin-right: 500px;
+    width: 600px;
 }
 
 
 .main-image {
-    border-radius: 50%;
-    margin-top: 106px;
-    margin-left: 100px;
-    position: relative;
+ 
     animation: rotateRight 1s ease-out forwards;
-    z-index: 0;
-    border: 8px solid #119d09;
+    
     
 }
 
@@ -55,58 +50,6 @@
     }
 }
 
-.main-image1 {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    border: 10px solid #119d09;
-    margin-top: -100px;
-    object-fit: cover;
-    z-index: 3;
-    position: relative;
-}
-
-
-
-
-
-.ring-circle {
-    width: 155px;
-    height: 155px;
-    border: 26px solid #119d09;
-    border-radius: 50%;
-    background-color: transparent;
-    margin-top: -992px;
-    margin-left: 335px;
-    z-index: 0;
-
-}
-
-
-.ring-circle1 {
-    width: 115px;
-    height: 118px;
-    border: 19px solid #119d09;
-    border-radius: 50%;
-    background-color: transparent;
-    margin-top: -166px;
-    margin-left: 420px;
-    z-index: 1;
-    
-
-}
-
-
-.ring-circle2 {
-    width: 80px;
-    height: 80px;
-    border: 15px solid #1a8510;
-    border-radius: 50%;
-    background-color: transparent;
-    margin-left: 297px;
-    margin-top: -67px;
-    z-index: 1;
-}
 
 .title {
     font-size: 350%;
@@ -157,16 +100,8 @@
     margin-left: 10px;
     font-style:italic;
 }
+
+.img-align-2{
+    width: 100%;
 }
-
-
-
-@media only screen and (min-width:600px) and (max-width:1200px){
-
-
-
-
-
-
 }
-@media only screen and (max-width:600px) {}
