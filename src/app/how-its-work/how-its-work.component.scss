@@ -1,16 +1,23 @@
+.reg{
+  background-color: #e6f3eb ;
+
+}
+
 .htreg{
   padding-top: 100px;
   padding-bottom: 100px;
+
+ 
 
 }
 .section{
   text-align: center;
 }
 .section-title {
-    font-family:  serif;
-    font-size: 2rem;
-    font-weight: 600;
-    color: #119d09;
+  color: #197639;
+    font-weight: 700;
+    font-size: 41px;
+    font-family: "Chillax";
 }
 .section-subtitle {
     font-size: 1.1rem;
@@ -36,13 +43,19 @@
     margin-bottom: 20px;
 }
 .reg-title {
-    font-size: 1.25rem;
-    font-weight: 600;
-    color:#119d09;
+   
     margin-bottom: 10px;
+
+    font-family: "chillax";
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #197639;
 }
 .reg-text {
-    font-size: 1rem;
-    color: #555;
+  font-size: 16px;
+  font-family: "Lato";
+  font-style: italic;
+  font-weight: 400;
+  color: #2b2626;
     line-height: 1.5;
   }

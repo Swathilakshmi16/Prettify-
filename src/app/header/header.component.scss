@@ -3,7 +3,13 @@
     // .desktop-hide{
     //    display: none;
     // }
-
+.head{
+    position: fixed; 
+    top: 0;          
+    left: 0;        
+    width: 100%;     
+    z-index: 1000;
+}
 .header {
     background: linear-gradient(to left,#9ce0b7,#b5f0cd,#86d1a4);
     padding: 10px 20px;
@@ -14,6 +20,7 @@
     box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
     font-family:'Chillax';
    
+    
 }
 
 .logo img {
@@ -21,6 +28,8 @@
     width: 130px;
     margin-top: -10px;
     object-fit: contain;
+    margin-left: -45px;
+
 }
 
 
@@ -61,18 +70,19 @@
 
 }
 
-.nav-bar {
-    background-color: #21212d;
-    position: fixed;
-    z-index: 500;
-    width: 100%;
-    height: 81px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 20px;
-    color: white;
-}
+// .nav-bar {
+//     background-color: #21212d;
+//     position: fixed;
+//     z-index: 500;
+//     width: 100%;
+//     height: 81px;
+//     display: flex;
+//     align-items: center;
+//     justify-content: space-between;
+//     padding: 0 20px;
+//     color: white;
+   
+// }
 
 .side-menu-bar {
     display: flex;
@@ -115,7 +125,7 @@
     justify-content: center;
     align-items: center;
     gap: 10px;
-    margin-left: 10px;
+    margin-left: 100px;
   }
   
   .nav1 {
