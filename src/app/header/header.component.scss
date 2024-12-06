@@ -147,142 +147,142 @@
 
 
 
-// @media only screen and (min-width:600px) and (max-width:1200px){
+@media only screen and (min-width:600px) and (max-width:1200px){
 
 
 
-//     .header {
-//         background-color: #ffcdac; 
-//         padding: 10px 20px;
-//         display: flex;
-//         align-items: center;
-//         justify-content: center;
-//         color: #333;
-//         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-//         font-family: "DM Serif Display", serif;
-//     }
+    .header {
+        background-color: #ffcdac; 
+        padding: 10px 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #333;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        font-family: "DM Serif Display", serif;
+    }
     
-//     .logo img {
-//         height: 90px;
-//         width: 130px;
-//         margin-top: -10px;
-//         object-fit: contain;
-//     }
+    .logo img {
+        height: 50px;
+        width: 70px;
+        margin-top: -10px;
+        object-fit: contain;
+    }
     
     
-//     .buttons {
-//         display: flex;
-//         gap: auto;
-//         margin-left: -20px;
-//         font-family: "DM Serif Display", serif;
-//     }
+    .buttons {
+        display: flex;
+        gap: auto;
+        margin-left: -20px;
+        font-family: "DM Serif Display", serif;
+    }
     
-//     .btn {
-//         padding:10px 20px;
-//         border: none;
-//         border-radius: 15px;
-//         font-size: 15px;
-//         cursor: pointer;
-//         color:#ff7043;
-//         background-color: #ff7043;
-//         transition: background-color 0.3s, color 0.3s;
-//         font-family: "DM Serif Display", serif;
-//         // border: #ff7043;
+    .btn {
+        padding:8px 8px;
+        border: none;
+        border-radius: 15px;
+        font-size: 10px;
+        cursor: pointer;
+        color:#ff7043;
+        background-color: #ff7043;
+        transition: background-color 0.3s, color 0.3s;
+        font-family: "DM Serif Display", serif;
+        // border: #ff7043;
        
-//     }
+    }
     
-//     .btn:hover {
-//         background-color: #ff7043;
-//         color: white;
-//         font-family: "DM Serif Display", serif;
-//     }
+    .btn:hover {
+        background-color: #ff7043;
+        color: white;
+        font-family: "DM Serif Display", serif;
+    }
     
-//     .login-btn {
-//         background-color: white;
-//         margin-left: 4px;
-//         margin-top: -10px;
-//         width: 150px;
-//         font-family: "DM Serif Display", serif;
-//         font-size: 20px;
+    .login-btn {
+        background-color: white;
+        margin-left: 4px;
+        margin-top: -10px;
+        width: 150px;
+        font-family: "DM Serif Display", serif;
+        font-size: 20px;
     
-//     }
+    }
     
-//     .nav-bar {
-//         background-color: #21212d;
-//         position: fixed;
-//         z-index: 500;
-//         width: 100%;
-//         height: 81px;
-//         display: flex;
-//         align-items: center;
-//         justify-content: space-between;
-//         padding: 0 20px;
-//         color: white;
-//     }
+    .nav-bar {
+        background-color: #21212d;
+        position: fixed;
+        z-index: 500;
+        width: 100%;
+        height: 81px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 20px;
+        color: white;
+    }
     
-//     .side-menu-bar {
-//         display: flex;
-//         align-items: center;
-//         gap: auto;
-//     }
+    .side-menu-bar {
+        display: flex;
+        align-items: center;
+        gap: auto;
+    }
     
-//     .menu-bar-align {
-//         height: 28px;
-//         width: 28px;
-//         display: flex;
-//         flex-direction: column;
-//         align-items: center;
-//         justify-content: space-around;
-//         margin-left: -62px;
-//     }
+    .menu-bar-align {
+        height: 28px;
+        width: 28px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        margin-left: -62px;
+    }
     
-//     .menu-bar {
-//         width: 25px;
-//         border-color: #ff7043;
-//         border-bottom-width: 3px;
-//         border-style: solid;
-//     }
+    .menu-bar {
+        width: 25px;
+        border-color: #ff7043;
+        border-bottom-width: 3px;
+        border-style: solid;
+    }
     
-//     .menu-item {
-//         color: #06010b;
-//         font-weight: bold;
-//         text-decoration: none;
-//     }
+    .menu-item {
+        color: #06010b;
+        font-weight: bold;
+        text-decoration: none;
+    }
     
-//     .offcanvas-body {
-//         background-color: #a5a5a5;
-//     }
-    
-    
+    .offcanvas-body {
+        background-color: #a5a5a5;
+    }
     
     
-//     .navbar {
-//         display: flex;
-//         justify-content: center;
-//         align-items: center;
-//         gap: 10px;
-//         margin-left: 10px;
-//       }
+    
+    
+    .navbar {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        margin-left: 10px;
+      }
       
-//       .nav1 {
-//         color: rgb(42, 32, 32);
-//         text-decoration: none;
-//         font-weight: 500;
-//         cursor: pointer;
-//         font-family: "DM Serif Display", serif;
-//         margin-right: 50px;
-//         font-size: 20PX;
-//     }
+      .nav1 {
+        color: rgb(42, 32, 32);
+        text-decoration: none;
+        font-weight: 500;
+        cursor: pointer;
+        font-family: "DM Serif Display", serif;
+        margin-right: 50px;
+        font-size: 20PX;
+    }
     
       
-//       .nav1:hover {
-//         color: #ff7043;
-//       }
+      .nav1:hover {
+        color: #ff7043;
+      }
 
 
 
     
-// }  
+}  
 
 
 
