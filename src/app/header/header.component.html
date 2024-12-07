@@ -1,111 +1,37 @@
-<!-- <div class="head">
-
-<header class="header mbview">
-    <div class="logo">
-        <img src="../../assets/logo1.png" alt="Logo">
-    </div>
-
-    <div class="navbar">
-      <a class="nav1" href="">Home</a>
-      <a class="nav1" href="#Courses">Course</a>
-      <a class="nav1" href="#Choose">Why Choose</a>
-      <a class="nav1" href="#work">How It Works</a>
-      <a class="nav1" href="#Learn">What You'll Learn</a>
-  </div>
-  <div>
-            <button class="btn login-btn" routerLink="/login">Login</button>
+<header>
+    <div class="container">
+        <div class="logo">
+            <img src="../../assets/logo.png" alt="Logo">
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#courses">Courses</a></li>
+                <li><a href="#why-choose">Why Choose</a></li>
+                <li><a href="#learn">Learn</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="login-button">
+            <a href="#login" class="btn">Login</a>
+        </div>
+        
+        <label for="menu-toggle" class="burger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
     </div>
 </header>
 
-
-<div class="offcanvas offcanvas-end" id="demo">
-        
-    <div class="offcanvas-header">
-    
-      <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
-    </div>
-    <div class="offcanvas-body">
-      
-      <p data-bs-dismiss="offcanvas"><a href="#About" class="menu-item" > About</a></p>
-      <p data-bs-dismiss="offcanvas"><a href="#Our Approach" class="menu-item" > Our Approach</a></p>
-      <p data-bs-dismiss="offcanvas"><a href="#Team" class="menu-item" > Team</a></p>
-      <p data-bs-dismiss="offcanvas"><a href="#Why" class="menu-item" > Why </a></p>
-      <p data-bs-dismiss="offcanvas"><a href="#Contact" class="menu-item" > Contact</a></p>
-      
-    </div>
-  </div>
-</div> -->
-
-
-
-
-
-<div class="nav-bar">
-  <div class="container">
-      <div class="row ">
-          <div class="col-sm-2 col-6">
-              <img class="logo" src="../../assets/logo1.png" alt="logo">
-          </div>
-          <div class="col-sm-8 nav-items dt-view" >
-              <ul class="nav justify-content-center">
-                <li class="nav-item">
-                  <a class="nav-link" href="#home">Home</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#Course">Course</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#Choose">Why Choose</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#work">How It Works</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#Learn">What You'll Learn</a>
-                </li>
-              </ul>
-            </div>
-            <div class="col-sm-2 col-6 text-end ">
-              <button class="contact-btn dt-view" routerLink="/login">Login</button>
-              <div class="md-view">
-
-
-
-                <div class="desktop-hide">
-                  <div class="side-menu-bar ">
-                      <div class="menu-bar-align" type="button" data-bs-toggle="offcanvas" data-bs-target="#demo" ria-controls="demo">
-                        <div class="menu-bar"></div>
-                        <div class="menu-bar"></div>
-                        <div class="menu-bar"></div>
-                      </div>
-                  </div>
-              </div>
-              
-           </div>
-        </div>
-    </div>
-    
-    </div>
+<input type="checkbox" id="menu-toggle" hidden>
+<div class="offcanvas-menu">
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#courses">Courses</a></li>
+        <li><a href="#why-choose">Why Choose</a></li>
+        <li><a href="#learn">Learn</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#login" class="btn">Login</a></li>
+    </ul>
 </div>
-
-    <div class="offcanvas offcanvas-end" id="demo">
-      
-      <div class="offcanvas-header">
-      
-        <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
-      </div>
-      <div class="offcanvas-body">
-        
-        
-        <p data-bs-dismiss="offcanvas"><a href="#home" class="menu-item" >Home </a></p>
-        <p data-bs-dismiss="offcanvas"><a href="#Course" class="menu-item" >Course</a></p>
-        <p data-bs-dismiss="offcanvas"><a href="#Choose" class="menu-item" >Why Choose</a></p>
-                  <p data-bs-dismiss="offcanvas"><a href="#work" class="menu-item" >How It Works</a></p>
-        <p data-bs-dismiss="offcanvas"><a href="#Learn" class="menu-item" > What You'll Learn</a></p>
-        
-      </div>
-    </div>
-
-
-
-
