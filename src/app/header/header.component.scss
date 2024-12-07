@@ -1,0 +1,209 @@
+@media only screen and (min-width: 1200px) {
+    body {
+        margin: 0;
+        font-family: "chillax";
+        background-color: #f9f9f9;
+    }
+
+    header {
+        background-color: #ffffff;
+        padding: 10px 20px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        background: linear-gradient(to left, #fff, #6df5a4,#fff);
+    }
+
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .logo img {
+        height: 70px;
+        width: auto;
+    }
+
+    .nav-links {
+        list-style: none;
+        display: flex;
+        margin: 0;
+        padding: 0;
+    }
+
+    .nav-links li {
+        margin: 0 15px;
+    }
+
+    .nav-links a {
+        text-decoration: none;
+        color: black;
+        font-size: 25px;
+    }
+
+    .login-button .btn {
+        background-color: green;
+        color: white;
+        padding: 8px 15px;
+        text-decoration: none;
+        border-radius: 5px;
+        font-size: 20px;
+    }
+
+    .login-button .btn:hover {
+        background-color: darkgreen;
+    }
+
+    .burger {
+        display: none; /* Hide burger icon in desktop view */
+    }
+
+    .offcanvas-menu {
+        display: none; /* Hide offcanvas menu in desktop view */
+    }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 1199px) {
+    body {
+        margin: 0;
+        font-family: "chillax";
+        background-color: #f9f9f9;
+    }
+
+    header {
+        background-color: #ffffff;
+        padding: 10px 20px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .logo img {
+        height: 50px;
+    }
+
+    .nav-links {
+        list-style: none;
+        display: flex;
+        margin: 0;
+        padding: 0;
+    }
+
+    .nav-links li {
+        margin: 0 15px;
+    }
+
+    .nav-links a {
+        text-decoration: none;
+        color: black;
+        font-size: 16px;
+    }
+
+    .login-button .btn {
+        background-color: green;
+        color: white;
+        padding: 8px 15px;
+        text-decoration: none;
+        border-radius: 5px;
+        font-size: 16px;
+    }
+
+    .login-button .btn:hover {
+        background-color: darkgreen;
+    }
+
+    .burger {
+        display: none; /* Hide burger icon in tablet view */
+    }
+
+    .offcanvas-menu {
+        display: none; /* Hide offcanvas menu in tablet view */
+    }
+}
+
+@media only screen and (max-width: 599px) {
+    .nav-links, .login-button {
+        display: none; /* Hide navigation links and login button */
+    }
+
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 20px;
+    }
+
+    .burger {
+        display: flex; /* Show burger icon in mobile view */
+        flex-direction: column;
+        cursor: pointer;
+    }
+
+    .burger span {
+        height: 3px;
+        width: 25px;
+        background-color: black;
+        margin: 4px 0;
+    }
+
+    .logo {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        flex-grow: 1;
+    }
+
+    .logo img {
+        max-width: 100px; /* Adjust logo size as needed */
+        height: auto;
+    }
+
+    .offcanvas-menu {
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: 250px;
+        height: 100%;
+        background-color: #ffffff;
+        box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+        z-index: 1000;
+        padding: 20px;
+        transition: left 0.3s ease;
+    }
+
+    .offcanvas-menu ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .offcanvas-menu li {
+        margin: 20px 0;
+    }
+
+    .offcanvas-menu a {
+        text-decoration: none;
+        color: black;
+        font-size: 18px;
+    }
+
+    .offcanvas-menu .btn {
+        display: inline-block;
+        background-color: green;
+        color: white;
+        padding: 10px 20px;
+        border-radius: 5px;
+        text-align: center;
+    }
+
+    #menu-toggle:checked + .offcanvas-menu {
+        left: 0;
+    }
+}
