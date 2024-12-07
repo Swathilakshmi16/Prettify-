@@ -14,9 +14,9 @@
         </nav>
         <div class="login-button">
             <a href="#login" class="btn">Login</a>
-        </div>
+        </div> 
         
-        <label for="menu-toggle" class="burger">
+        <label for="menu-toggle" class="burger" data-bs-toggle="offcanvas" data-bs-target="#demo" aria-controls="demo">
             <span></span>
             <span></span>
             <span></span>
@@ -25,13 +25,17 @@
 </header>
 
 <input type="checkbox" id="menu-toggle" hidden>
-<div class="offcanvas-menu">
+<div class="offcanvas offcanvas-start offcanvas-menu" id="demo">
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+<div class="offcanvas-body">
+
     <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#courses">Courses</a></li>
-        <li><a href="#why-choose">Why Choose</a></li>
-        <li><a href="#learn">Learn</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <li><a href="#login" class="btn">Login</a></li>
+        <li  data-bs-dismiss="offcanvas"><a href="#home">Home</a></li>
+        <li data-bs-dismiss="offcanvas"><a href="#courses">Courses</a></li>
+        <li data-bs-dismiss="offcanvas"><a href="#why-choose">Why Choose</a></li>
+        <li data-bs-dismiss="offcanvas"><a href="#learn">Learn</a></li>
+        <li data-bs-dismiss="offcanvas"><a href="#contact">Contact</a></li>
+        <li data-bs-dismiss="offcanvas"><a href="#login" class="btn">Login</a></li>
     </ul>
+</div>
 </div>

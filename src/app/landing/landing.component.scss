@@ -25,16 +25,17 @@
     }
 
     .header .title {
-        font-size: 2.5rem;
+        margin-top: 180px;
+        font-size: 41px;
         font-weight: bold;
         margin-bottom: 20px;
-        color: #444;
+        color: green;
         font-family: "chillax";
     }
 
     .header .subtitle {
-        font-size: 1rem;
-        line-height: 1.8;
+        font-size: 22px;
+        text-align: justify;
         margin-bottom: 30px;
         color: #555;
         font-family: "lado";
@@ -51,8 +52,8 @@
     }
 
     .bullet .content {
-        font-size: 1rem;
-        line-height: 1.4;
+        font-size: 20px;
+        
         color: #666;
         font-family: "lado";
         font-style: italic;
@@ -70,6 +71,7 @@
         height: auto;
         border-radius: 10px;
         animation: zoomIn 5s ease-in-out forwards;
+        margin-top: 108px;
     }
 
     @keyframes zoomIn {
@@ -95,7 +97,7 @@
 
     .land {
         padding: 0px 15px;
-        background: linear-gradient(to left, #fff, #b3e6c7);
+        background: linear-gradient(to left, #fff, #6df5a4);
     }
 
     .row {
@@ -112,35 +114,48 @@
     }
 
     .header .title {
-        font-size: 25px;
+
+       margin-top: 150px;
+        font-size: 33px;
         font-weight: bold;
         margin-bottom: 7px;
-        color: #444;
+        color: green;
         font-family: "chillax";
     }
 
     .header .subtitle {
-        font-size: 13px;
+        font-size: 17px;
         line-height: 1.6;
         margin-bottom: 20px;
         color: #555;
         font-family: "lado";
     }
-    .bullet img {
-        display: none;
+    .content{
+        padding-left: 10px;
     }
 
-    .bullet .content {
-        font-size: 10px; 
-        margin-left: 15px; 
-        font-style: italic;
-        font-family: "lado";
+    .bullets {
+        display: flex;
+        flex-direction: column; /* Stack bullets vertically */
+      
+        width: 100%; /* Full width */
+        padding: 0 15px; /* Padding to avoid touching screen edges */
+        margin: 30px auto;
+    }
+
+    .bullet {
+        margin-left: 20px;
+        display: flex;
+        flex-direction: row; /* Stack icon and content vertically */
+       /* Center align bullet items */
+       
+        margin: 0; /* Remove extra gap */
     }
 
 
 
     .image-container .main-image {
-        width: 100%;
+        width: 80%;
         height: auto;
         border-radius: 10px;
         animation: zoomIn 3s ease-in-out forwards;
@@ -179,10 +194,10 @@
     .land {
         display: flex;
         flex-direction: column;
-        align-items: center;
+   
         padding: 20px;
         background: linear-gradient(to left, #fff, #b3e6c7);
-        text-align: center;
+        
         width: 100%; /* Ensure it covers the full screen width */
     }
 
@@ -190,12 +205,13 @@
         display: flex;
         flex-direction: column; /* Stack items vertically */
         align-items: center; /* Center align items */
-        width: 100%; /* Full width */
+    
     }
 
     .col-6 {
+      
         width: 100%; /* Full width for mobile */
-        text-align: center;
+
         padding: 20px;
         box-sizing: border-box; /* Include padding in element width */
     }
@@ -205,6 +221,7 @@
         text-align: center; /* Center the image horizontally */
         width: 100%; /* Ensure image takes full width */
         padding: 0; /* Remove padding if any */
+        display: none;
     }
 
     .image-container img {
@@ -214,46 +231,57 @@
     }
 
     .header .title {
-        font-size: 25px;
+        font-size: 32px;
         font-weight: bold;
         margin-bottom: 10px;
-        color: #444;
+        color: green;
         font-family: "chillax";
         line-height: 1.3;
+        text-align: center;
+        padding: 24px;
+        margin-top: 100px;
     }
 
     .header .subtitle {
-        font-size: 14px;
+        font-size: 20px;
         line-height: 1.6;
         margin-bottom: 20px;
         color: #555;
         font-family: "lado";
+        text-align: center;
+    }
+    .subtitle{
+        font-size: 25x;
+
+    }
+    .content{
+        padding-left: 10px;
     }
 
     .bullets {
         display: flex;
         flex-direction: column; /* Stack bullets vertically */
-        align-items: center; /* Center-align bullet content */
+      
         width: 100%; /* Full width */
         padding: 0 15px; /* Padding to avoid touching screen edges */
-        margin: 0 auto;
+        margin: 30px auto;
     }
 
     .bullet {
+        margin-left: 20px;
         display: flex;
-        flex-direction: column; /* Stack icon and content vertically */
-        align-items: center; /* Center align bullet items */
-        text-align: center;
-        padding: 10px;
+        flex-direction: row; /* Stack icon and content vertically */
+       /* Center align bullet items */
+       
         margin: 0; /* Remove extra gap */
     }
 
     .bullet img {
-        display: none; /* Hide icons on mobile */
+        // display: none; /* Hide icons on mobile */
     }
 
     .bullet .content {
-        font-size: 12px;
+        font-size: 16px;
         line-height: 1.5;
         color: #555;
         font-family: "lado";

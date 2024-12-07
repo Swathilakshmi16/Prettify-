@@ -178,7 +178,7 @@
         padding-top: 50px;
     }
     .content{
-        margin-top: 250px;
+       
         margin-bottom: 50px;
         display: flex;
         align-items: center;
@@ -256,13 +256,8 @@
         height: 30px;
     }
     .image{
-        margin-top: 245px;
-        margin-bottom: 50px;
-        position: relative;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
+   
+        display: none;
     }
     
     .wcimg1{
@@ -352,7 +347,7 @@
             padding-top: 50px;
         }
         .content{
-            margin-top: 200px;
+           
             margin-bottom: 50px;
             display: flex;
             align-items: center;
@@ -432,6 +427,7 @@
             align-items: center;
             justify-content: center;
             text-align: center;
+            display: none;
         }
         
         .wcimg1{

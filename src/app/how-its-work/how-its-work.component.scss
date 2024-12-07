@@ -1,10 +1,58 @@
 @media only screen and (min-width:1200px){
+  .get{
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+    text-align: center ;
+
+}
+.contact img {
+  height: 50px;
+  width: 50px;
+  margin-left: 50px;
+
+}
+
+.freequote{
+  justify-content: center;
+  align-items: center;
+  text-align: center ;
+  display: flex;
+  margin: 30px;
   
+}
+.h1 {
+  
+  font-size: 40px;
+  color: #2b2626;
+  font-weight: 700;
+  text-align: center;
+  font-family: "Chillax";
+ 
+
+}
+.quote{
+  background-color: #8eeeb0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   
   .htreg{
     padding-top: 100px;
-    padding-bottom: 100px;
+    padding-bottom: 30px;
   
    
   
@@ -60,73 +108,58 @@
     }
   
 }
-@media only screen and (max-width:599px){
-.htreg{
-  padding-top: 100px;
-  padding-bottom: 100px;
-  text-align: center;
-  justify-content: center;
 
-}
-.section{
-  text-align: center;
- 
-}
-.section-title {
-  color: #197639;
-    font-weight: 700;
-    font-size: 30px;
-    font-family: "Chillax";
-}
-.section-subtitle {
-    font-size: 17px;
-    color: #6c757d;
-    margin-bottom: 2rem;
-}
-.reg-box {
-    text-align: center;
-    padding: 20px;
-    margin-top: 40px;
-    background-color: #fff;
-    border-radius: 10px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    width: 100%;
-    align-items: center;
-    justify-content: center;
-}
-.reg-box:hover {
-    transform: translateY(-10px);
-    box-shadow: 3px 6px 6px 6px  #96cc93;
 
-}
-.reg-icon {
-    font-size: 3rem;
-    color: #119d09;
-    margin-bottom: 20px;
-}
-.reg-title {
+@media only screen and (min-width:600px) and (max-width:1199px){
+  .get{
+    display: flex;
    
-    margin-bottom: 10px;
+    justify-content: center;
+    align-items: center;
+    text-align: center ;
 
-    font-family: "chillax";
-    font-size: 18px;
-    font-weight: bold;
-    color: #197639;
 }
-.reg-text {
-  font-size: 15px;
-  font-family: "Lato";
-  font-style: italic;
-  font-weight: 400;
-  color: #2b2626;
-    line-height: 1.5;
-  }
+.contact img {
+  height: 50px;
+  width: 50px;
+  margin-left: 50px;
+
+}
+
+.freequote{
+  justify-content: center;
+  align-items: center;
+  text-align: center ;
+  display: flex;
+  margin: 30px;
   
 }
+.h1 {
+  
+  font-size: 40px;
+  color: #2b2626;
+  font-weight: 700;
+  text-align: center;
+  font-family: "Chillax";
+ 
+
+}
+.quote{
+  background-color: #8eeeb0;
+}
 
 
 
-@media only screen and (min-width:600px) and (max-width:1999px){
+
+
+
+
+
+
+
+
+
+
   .htreg{
     padding-top: 100px;
     padding-bottom: 100px;
@@ -189,3 +222,113 @@
   
   
   }
+
+
+  @media only screen and (max-width:599px){
+    .get{
+      display: flex;
+    
+      justify-content: center;
+      align-items: center;
+      text-align: center ;
+  
+  }
+  .contact img {
+    height: 38px;
+    width: 44px;
+    margin-left: 5px;
+  
+  }
+  
+  .freequote{
+    justify-content: center;
+    align-items: center;
+    text-align: center ;
+    display: flex;
+    margin: 18px;
+    
+  }
+  .h1 {
+    
+    font-size: 28px;
+    color: #2b2626;
+    font-weight: 700;
+    text-align: center;
+    font-family: "Chillax";
+   
+  
+  }
+  .quote{
+    background-color: #8eeeb0;
+  }
+
+
+
+
+
+
+
+    .htreg{
+      padding-top: 60px;
+      padding-bottom: 50px;
+      text-align: center;
+      justify-content: center;
+    
+    }
+    .section{
+      text-align: center;
+     
+    }
+    .section-title {
+      color: #197639;
+        font-weight: 700;
+        font-size: 30px;
+        font-family: "Chillax";
+    }
+    .section-subtitle {
+        font-size: 17px;
+        color: #6c757d;
+      
+    }
+    .reg-box {
+        text-align: center;
+        padding: 7px;
+    ;
+        background-color: #fff;
+        border-radius: 10px;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+    .reg-box:hover {
+        transform: translateY(-10px);
+        box-shadow: 3px 6px 6px 6px  #96cc93;
+    
+    }
+    .reg-icon {
+        font-size: 35px;
+        color: #119d09;
+       
+    }
+    .reg-title {
+       
+        margin-bottom: 10px;
+    
+        font-family: "chillax";
+        font-size: 18px;
+        font-weight: bold;
+        color: #197639;
+    }
+    .reg-text {
+      font-size: 15px;
+      font-family: "Lato";
+      font-style: italic;
+      font-weight: 400;
+      color: #2b2626;
+        line-height: 1.5;
+      }
+      
+    }
+    
+    

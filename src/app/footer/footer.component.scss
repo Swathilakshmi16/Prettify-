@@ -1,5 +1,11 @@
 @media only screen and (min-width:1200px){
 
+.cntlogo img{
+    width:25px;
+    height: 25px;
+    margin-right: 10px;
+}
+
 
 #footer {
     background: linear-gradient(to left,#9ce0b7,#b5f0cd,#86d1a4);
@@ -14,7 +20,9 @@
     padding: 5px;
 }
 .sociallogo {
-    text-align: center;
+    // text-align: center;
+    padding-top: 16px;
+    
 }
 .logo{
     text-align: center;
@@ -86,11 +94,17 @@
     font-weight: 300;
 
 }
-.ddview{
+
+.mbview{
     display: none;
 }
 }
 @media only screen and (min-width:600px) and (max-width:1199px){
+    .cntlogo img{
+        width:25px;
+        height: 25px;
+        margin-right: 10px;
+    }
 
     #footer {
         background: linear-gradient(to left,#9ce0b7,#b5f0cd,#86d1a4);
@@ -98,15 +112,13 @@
         padding-top: 60px;
     }
     .logo img{
-        max-width: 190px;
+        max-width: 170px;
     }
     .sociallogo img {
-        max-width: 50px;
+        max-width: 45px;
         padding: 5px;
     }
-    .sociallogo {
-        text-align: center;
-    }
+ 
     .logo{
         text-align: center;
     }
@@ -145,7 +157,10 @@
         margin-right: 10px;
     
     }
-    
+    .contactus{
+        display: flex;
+        justify-content: center;
+    }
      .number {
         font-size: 18px;
         font-weight: bold;
@@ -177,18 +192,8 @@
         font-weight: 300;
     
     }
-    .mbview {
-        display: none;
-        
-
-    }
     .ddview{
-        text-align: center;
-        justify-content: center;
-        align-items: center;
-        display: flex;
-        padding-top: 37px;
-       
+        display: none;
     }
     .dd{
         text-align: center;
@@ -204,29 +209,30 @@
 }
 @media only screen and (max-width:599px){
 
+    .cntlogo img{
+        width:25px;
+        height: 25px;
+        margin-right: 10px;
+    }
     #footer {
         background: linear-gradient(to left,#9ce0b7,#b5f0cd,#86d1a4);
         margin-bottom: 5px;
-        padding-top: 60px;
+        padding-top: 20px;
     }
     .logo img{
-        max-width: 190px;
+        max-width: 170px;
     }
     .sociallogo img {
         max-width: 50px;
         padding: 5px;
     }
-    .sociallogo {
-        text-align: center;
-    }
-    .logo{
-        text-align: center;
-    }
+
+
      .h1 {
         font-size: 1.5rem;
         color: #197639;
         font-weight: 700;
-        text-align: center;
+      
     
         font-family: "Chillax";
         margin-bottom: 15px;
@@ -290,18 +296,8 @@
         font-weight: 300;
     
     }
-    .mbview {
-        display: none;
-        
-
-    }
-    .ddview{
-        justify-content: center;
-        align-items: center;
-        display: flex;
-        padding-top: 37px;
-       
-    }
+  
+    
     .get{
         text-align: center;
         justify-content: center;
@@ -310,9 +306,21 @@
         margin: 40px;
 
     }
+    .contactus{
+        justify-content: center;
+        display: flex;
+        margin-top: 30px;
 
-
-
+    }
+    .followus{
+        margin-top: 20px;
+    }
+    .ddview{
+        display: none;
+    }
 
 }
+
+
+
 
