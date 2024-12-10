@@ -1,0 +1,22 @@
+<div class="make">
+  <div class="container">
+  <h1 class="page-heading">Welcome to Prettify</h1>
+
+  <div class="row">
+    <div class="col-4" *ngFor="let channel of youTube">
+      <div class="video-card">
+        <div class="thumbnail-align">
+          <video [src]="channel.videoUrl" class="thumbnail" controls></video>
+        </div>
+        <div class="video-info">
+          <img [src]="channel.logoUrl" alt="Channel Logo" class="channel-logo">
+          <div class="details">
+            <h3 class="video-title">{{ channel.videoTitle }}</h3>
+            <p class="channel-name">{{ channel.channelName }}</p>
+            <p class="views">{{ channel.views }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
