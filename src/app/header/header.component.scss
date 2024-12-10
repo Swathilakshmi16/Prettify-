@@ -1,282 +1,220 @@
+ .header{
+        background: linear-gradient(to left, #fff, #6df5a4,#fff);
+    }
 
-@media only screen and (min-width:1200px) {
-    // .desktop-hide{
-    //    display: none;
-    // }
+@media only screen and (min-width: 1200px) {
+    body {
+        margin: 0;
+        font-family: "chillax";
+        background-color: #f9f9f9;
+    }
 
-.header {
-    background: linear-gradient(to left,#9ce0b7,#b5f0cd,#86d1a4);
-    padding: 10px 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #d19122;
-    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
-    font-family:'Chillax';
+    header {
+        background-color: #ffffff;
+        padding: 10px 20px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        background: linear-gradient(to left, #fff, #6df5a4,#fff);
+        position: fixed;
+       width: 100%;
+       top: 0px;
+       z-index: 1010;
+    }
+
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .logo img {
+        height: 70px;
+        width: auto;
+    }
+
+    .nav-links {
+        list-style: none;
+        display: flex;
+        margin: 0;
+        padding: 0;
+    }
+
+    .nav-links li {
+        margin: 0 15px;
+    }
+
+    .nav-links a {
+        text-decoration: none;
+        color: black;
+        font-size: 25px;
+    }
+
+    .login-button .btn {
+        background-color: green;
+        color: white;
+        padding: 8px 15px;
+        text-decoration: none;
+        border-radius: 5px;
+        font-size: 20px;
+    }
+
+    .login-button .btn:hover {
+        background-color: darkgreen;
+    }
+
+    .burger {
+        display: none; /* Hide burger icon in desktop view */
+    }
+
+    .offcanvas-menu {
+        display: none; /* Hide offcanvas menu in desktop view */
+    }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 1199px) {
+    body {
+        margin: 0;
+        font-family: "chillax";
+        background-color: #f9f9f9;
+    }
+
+    header {
+        background: linear-gradient(to left, #fff, #6df5a4,#fff);
+        padding: 10px 20px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        position: fixed;
+       width: 100%;
+       top: 0px;
+       z-index: 1010;
+    }
+
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .logo img {
+        height: 50px;
+    }
+
+    .nav-links {
+        list-style: none;
+        display: flex;
+        margin: 0;
+        padding: 0;
+    }
+
+    .nav-links li {
+        margin: 0 15px;
+    }
+
+    .nav-links a {
+        text-decoration: none;
+        color: black;
+        font-size: 16px;
+    }
+
+    .login-button .btn {
+        background-color: green;
+        color: white;
+        padding: 8px 15px;
+        text-decoration: none;
+        border-radius: 5px;
+        font-size: 16px;
+    }
+
+    .login-button .btn:hover {
+        background-color: darkgreen;
+    }
+
+    .burger {
+        display: none; /* Hide burger icon in tablet view */
+    }
+
+    .offcanvas-menu {
+        display: none; /* Hide offcanvas menu in tablet view */
+    }
+}
+
+@media only screen and (max-width: 599px) {
+    header {
+        background: linear-gradient(to left, #fff, #6df5a4,#fff);
    
-}
+       width: 100%;
+       top: 0px;
+       left:0px;
+       z-index: 1010;
+    }
+    .nav-links, .login-button {
+        display: none; /* Hide navigation links and login button */
+    }
 
-.logo img {
-    height: 90px;
-    width: 130px;
-    margin-top: -10px;
-    object-fit: contain;
-}
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 20px;
+    }
 
+    .burger {
+        display: flex; /* Show burger icon in mobile view */
+        flex-direction: column;
+        cursor: pointer;
+    }
 
-.buttons {
-    display: flex;
-    gap: auto;
-    // margin-left: -20px;
-    font-family:'Chillax';
-}
+    .burger span {
+        height: 3px;
+        width: 25px;
+        background-color: black;
+        margin: 4px 0;
+    }
 
-.btn {
-    padding:10px 20px;
-    border: none;
-    border-radius: 15px;
-    font-size: 15px;
-    cursor: pointer;
-    color:white;
-    background-color: rgb(24, 72, 32);
-    transition: background-color 0.3s, color 0.3s;
-    font-family: "Lato";
-    // border: #ff7043;
-   
-}
+    .logo {
+        display: flex;
+        
+        align-items: center;
+        flex-grow: 1;
+    }
 
-.btn:hover {
-    background-color: rgb(24, 72, 32);
-    color: white;
-    font-family: "Lato";
-}
-
-.login-btn {
-    background-color: rgb(52, 131, 65);
-    margin-left: 4px;
-    margin-top: -10px;
-    width: 150px;
-    font-family: "Lato";
-    font-size: 20px;
-
-}
-
-.nav-bar {
-    background-color: #21212d;
-    position: fixed;
-    z-index: 500;
-    width: 100%;
-    height: 81px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 20px;
-    color: white;
-}
-
-.side-menu-bar {
-    display: flex;
-    align-items: center;
-    gap: auto;
-}
-
-.menu-bar-align {
-    height: 28px;
-    width: 28px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    margin-left: -62px;
-}
-
-.menu-bar {
-    width: 25px;
-    border-color: rgb(24, 72, 32);
-    border-bottom-width: 3px;
-    border-style: solid;
-}
-
-.menu-item {
-    color:white;
-    font-weight: bold;
-    text-decoration: none;
-}
-
-.offcanvas-body {
-    background-color: #a5a5a5;
-}
+    .logo img {
+        max-width: 100px; /* Adjust logo size as needed */
+        height: auto;
+    }
 
 
+    .offcanvas-menu ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .offcanvas-menu li {
+        margin: 20px 0;
+    }
+
+    .offcanvas-menu a {
+        text-decoration: none;
+        color: black;
+        font-size: 18px;
+    }
+
+    .offcanvas-menu .btn {
+        display: inline-block;
+        background-color: green;
+        color: white;
+        padding: 10px 20px;
+        border-radius: 5px;
+        text-align: center;
+    }
 
 
-.navbar {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    margin-left: 10px;
-  }
   
-  .nav1 {
-    color: rgb(42, 32, 32);
-    text-decoration: none;
-    font-weight: 500;
-    cursor: pointer;
-    font-family:'Chillax';
-    margin-right: 50px;
-    font-size: 20PX;
+    .offcanvas-menu{
+        background: linear-gradient(to top, #fff, #6df5a4,#fff);
+        width: 60%;
+    }
 }
-
-  
-  .nav1:hover {
-    color: rgb(24, 72, 32);
-  }
-
-}
-
-
-
-// @media only screen and (min-width:600px) and (max-width:1200px){
-
-
-
-//     .header {
-//         background-color: #ffcdac; 
-//         padding: 10px 20px;
-//         display: flex;
-//         align-items: center;
-//         justify-content: center;
-//         color: #333;
-//         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-//         font-family: "DM Serif Display", serif;
-//     }
-    
-//     .logo img {
-//         height: 90px;
-//         width: 130px;
-//         margin-top: -10px;
-//         object-fit: contain;
-//     }
-    
-    
-//     .buttons {
-//         display: flex;
-//         gap: auto;
-//         margin-left: -20px;
-//         font-family: "DM Serif Display", serif;
-//     }
-    
-//     .btn {
-//         padding:10px 20px;
-//         border: none;
-//         border-radius: 15px;
-//         font-size: 15px;
-//         cursor: pointer;
-//         color:#ff7043;
-//         background-color: #ff7043;
-//         transition: background-color 0.3s, color 0.3s;
-//         font-family: "DM Serif Display", serif;
-//         // border: #ff7043;
-       
-//     }
-    
-//     .btn:hover {
-//         background-color: #ff7043;
-//         color: white;
-//         font-family: "DM Serif Display", serif;
-//     }
-    
-//     .login-btn {
-//         background-color: white;
-//         margin-left: 4px;
-//         margin-top: -10px;
-//         width: 150px;
-//         font-family: "DM Serif Display", serif;
-//         font-size: 20px;
-    
-//     }
-    
-//     .nav-bar {
-//         background-color: #21212d;
-//         position: fixed;
-//         z-index: 500;
-//         width: 100%;
-//         height: 81px;
-//         display: flex;
-//         align-items: center;
-//         justify-content: space-between;
-//         padding: 0 20px;
-//         color: white;
-//     }
-    
-//     .side-menu-bar {
-//         display: flex;
-//         align-items: center;
-//         gap: auto;
-//     }
-    
-//     .menu-bar-align {
-//         height: 28px;
-//         width: 28px;
-//         display: flex;
-//         flex-direction: column;
-//         align-items: center;
-//         justify-content: space-around;
-//         margin-left: -62px;
-//     }
-    
-//     .menu-bar {
-//         width: 25px;
-//         border-color: #ff7043;
-//         border-bottom-width: 3px;
-//         border-style: solid;
-//     }
-    
-//     .menu-item {
-//         color: #06010b;
-//         font-weight: bold;
-//         text-decoration: none;
-//     }
-    
-//     .offcanvas-body {
-//         background-color: #a5a5a5;
-//     }
-    
-    
-    
-    
-//     .navbar {
-//         display: flex;
-//         justify-content: center;
-//         align-items: center;
-//         gap: 10px;
-//         margin-left: 10px;
-//       }
-      
-//       .nav1 {
-//         color: rgb(42, 32, 32);
-//         text-decoration: none;
-//         font-weight: 500;
-//         cursor: pointer;
-//         font-family: "DM Serif Display", serif;
-//         margin-right: 50px;
-//         font-size: 20PX;
-//     }
-    
-      
-//       .nav1:hover {
-//         color: #ff7043;
-//       }
-
-
-
-    
-// }  
-
-
-
-
-// @media only screen and (max-width:600px) {
-   
-// }

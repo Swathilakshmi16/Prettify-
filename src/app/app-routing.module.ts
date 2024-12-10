@@ -4,11 +4,13 @@ import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
 import { CoursecardComponent } from './coursecard/coursecard.component';
 import { OurAllCourseComponent } from './our-all-course/our-all-course.component';
+import { CourseDataComponent } from './course-data/course-data.component';
 
 const routes: Routes = [
    {path:'', component:HomeComponent},
    {path:'login', component:LoginComponent},
-   {path:'courses',component:OurAllCourseComponent}
+   {path:'courses',component:OurAllCourseComponent},
+   {path:'course-details',component:CourseDataComponent}
 ];
 
 @NgModule({

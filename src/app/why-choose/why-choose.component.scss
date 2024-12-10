@@ -36,10 +36,10 @@
 
 
 .mainh1{
-    color: #197639; 
-    font-size: 40px;
-    font-weight: 550;
-    font-family:'Chillax';
+    color: #197639;
+    font-weight: 700;
+    font-size: 41px;
+    font-family: "Chillax";
     // text-shadow: 6px 6px 7px rgba(0, 0, 0, 0.2);
 }
 
@@ -50,7 +50,7 @@
     background-color: #20c65a;
     box-shadow: #197639;
     padding: 20px;
-    width: 475px;
+    width: 100%;
     height: 190px;
     border-radius: 20px;
     // box-shadow: 10px 10px 10px5px rgb(48, 48, 48);
@@ -166,7 +166,387 @@
     border: 3px solid white;
     margin: 10px;
 }
+.ddview{
+    display: none;
 }
+}
+
+
+@media only screen and (min-width:600px) and (max-width:1199px){
+    .whychoosettl{
+        background: linear-gradient(to left,#fff,#9ce0b7);
+        padding-top: 50px;
+    }
+    .content{
+       
+        margin-bottom: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+       
+    }
+    // .mbview{
+    //     display: none;
+    // }
+    
+    
+    .mainh1{
+        color: #197639;
+        font-weight: 700;
+        font-size: 33px;
+        font-family: "Chillax";
+        // text-shadow: 6px 6px 7px rgba(0, 0, 0, 0.2);
+    }
+
+    .para{
+        margin-top: 20px;
+        
+        border-color:rgb(112, 110, 106);
+        background-color: #20c65a;
+        box-shadow: #197639;
+        padding: 20px;
+        width: 100%;
+        height: 190px;
+        border-radius: 20px;
+        // box-shadow: 10px 10px 10px5px rgb(48, 48, 48);
+        justify-content: left;
+        font-family:'Chillax';
+        
+    }
+    .mainsubpara{
+        font-size: 16px;
+        font-style: italic;
+        font-weight: 400;
+       
+    }
+    
+    .conth1{
+        // font-size: 24px;
+        // font-weight: bold;
+        // color: #333;
+        font-weight: 600;
+        margin-left: 9px;
+        font-size: 23px;
+        font-weight: bold;
+        color: #197639;
+    }
+    
+    .contpara{
+        font-size: 15px;
+        font-family: "Lato";
+        font-style: italic;
+        font-weight: 490;
+        color: #2b2626;
+        
+        
+    }
+    .para{
+        display: flex;
+        background-color: #8eeeb0;
+        
+    }
+    .para:hover{
+        // transform: scale(1.1);
+        transform: translateY(-5px);
+        box-shadow: 0px 8px 15px #197639;
+    }
+    .logo img{
+        width: 30px;
+        height: 30px;
+    }
+    .image{
+   
+        display: none;
+    }
+    
+    .wcimg1{
+        position: absolute;
+        top: -153px;
+        left: 11%;
+        
+        z-index: 4;
+        animation-name: imagelr;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in-out;
+        width: 24%;
+        height: 220px;
+       
+        border: 3px solid white;
+       
+        margin: 10px;
+    
+    }
+    .wcimg2{
+        position: absolute;
+        top: 16px;
+        left: 30%;
+       
+        z-index: 3;
+        animation-name: imageup;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in-out;
+        width: 24%;
+        height: 220px;
+       
+        border: 3px solid white;
+
+        margin: 10px;
+    }
+    .wcimg3{
+        position: absolute;
+        top: -104px;
+        right: 31%;
+       
+        z-index: 1;
+        animation-name: imagelr;
+        animation-duration: 9s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in-out;
+        width: 24%;
+        height: 220px;
+        
+        border: 3px solid white;
+        margin: 10px;
+    }
+    .wcimg4{
+        position: absolute;
+        bottom: 20px;
+        left: 30%;
+       
+        z-index: 2;
+        animation-name: imageup;
+        animation-duration: 9s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in-out;
+        width: 24%;
+        height: 220px;
+        border: 3px solid white;
+
+        margin: 10px;
+    }
+    .mdview{
+        display: none;
+    }
+    .ddview{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    }
+    
+
+
+    @media only screen and (max-width:599px){
+        .whychoosettl{
+            background: linear-gradient(to left,#fff,#9ce0b7);
+            padding-top: 50px;
+        }
+        .content{
+           
+            margin-bottom: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;    
+        }
+ 
+        
+        .mainh1{
+            color: #197639;
+            font-weight: 700;
+            font-size: 28px;
+            font-family: "Chillax";
+
+        }
+    
+        .para{
+            margin-top: 20px;
+            
+            border-color:rgb(112, 110, 106);
+            background-color: #20c65a;
+            box-shadow: #197639;
+            padding: 20px;
+            width: 100%;
+            height: 190px;
+            border-radius: 20px;
+            // box-shadow: 10px 10px 10px5px rgb(48, 48, 48);
+            justify-content: left;
+            font-family:'Chillax';
+            
+        }
+        .mainsubpara{
+            font-size: 16px;
+            font-style: italic;
+            font-weight: 400;
+           
+        }
+        
+        .conth1{
+            // font-size: 24px;
+            // font-weight: bold;
+            // color: #333;
+            font-weight: 600;
+            margin-left: 9px;
+            font-size: 21px;
+            font-weight: bold;
+            color: #197639;
+        }
+        
+        .contpara{
+            font-size: 15px;
+            font-family: "Lato";
+            font-style: italic;
+            font-weight: 400;
+            color: #2b2626;
+            
+            
+        }
+        .para{
+            display: flex;
+            background-color: #8eeeb0;
+            
+        }
+        .para:hover{
+            // transform: scale(1.1);
+            transform: translateY(-5px);
+            box-shadow: 0px 8px 15px #197639;
+        }
+        .logo img{
+            width: 30px;
+            height: 30px;
+        }
+        .image{
+            margin-top: 245px;
+            margin-bottom: 50px;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            display: none;
+        }
+        
+        .wcimg1{
+            position: absolute;
+            top: -153px;
+            left: 11%;
+            
+            z-index: 4;
+            animation-name: imagelr;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in-out;
+            width: 24%;
+            height: 187px;
+           
+            border: 3px solid white;
+           
+            margin: 10px;
+        
+        }
+        .wcimg2{
+            position: absolute;
+            top: 16px;
+            left: 30%;
+           
+            z-index: 3;
+            animation-name: imageup;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in-out;
+            width: 24%;
+            height: 181px;
+           
+            border: 3px solid white;
+    
+            margin: 10px;
+        }
+        .wcimg3{
+            position: absolute;
+            top: -104px;
+            right: 31%;
+           
+            z-index: 1;
+            animation-name: imagelr;
+            animation-duration: 9s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in-out;
+            width: 24%;
+            height: 187px;
+            
+            border: 3px solid white;
+            margin: 10px;
+        }
+        .wcimg4{
+            position: absolute;
+            bottom: 20px;
+            left: 30%;
+           
+            z-index: 2;
+            animation-name: imageup;
+            animation-duration: 9s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in-out;
+            width: 24%;
+            height: 187px;
+            border: 3px solid white;
+    
+            margin: 10px;
+        }
+        .mdview{
+            display: none;
+        }
+        .ddview{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+    
+        }
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // @media only screen and (min-width:600px) and (max-width:1999px){
     
 //     @keyframes imagelr{

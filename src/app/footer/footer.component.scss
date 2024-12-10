@@ -1,3 +1,11 @@
+@media only screen and (min-width:1200px){
+
+.cntlogo img{
+    width:25px;
+    height: 25px;
+    margin-right: 10px;
+}
+
 
 #footer {
     background: linear-gradient(to left,#9ce0b7,#b5f0cd,#86d1a4);
@@ -12,22 +20,30 @@
     padding: 5px;
 }
 .sociallogo {
-    text-align: center;
+    // text-align: center;
+    padding-top: 16px;
+    
 }
 .logo{
     text-align: center;
 }
  .h1 {
     font-size: 1.5rem;
+    color: #197639;
+    font-weight: 700;
+
+    font-family: "Chillax";
     margin-bottom: 15px;
-    font-weight: bold;
+ 
 }
 
  .ab{
-    line-height: 1.5;
     font-size: 18px;
-    font-family: "DM Serif Display", serif;
+    color: #555;
+    line-height: 1.6;
+    font-family: "Lado";
     font-style: italic;
+    font-weight: 300;
     display: flex;
 
 }
@@ -71,8 +87,240 @@
     text-align: center;
     font-size: 14px;
     padding-bottom: 3px;
+    color: #555;
+   
+    font-family: "Lado";
+    font-style: italic;
+    font-weight: 300;
 
 }
+
+.mbview{
+    display: none;
+}
+}
+@media only screen and (min-width:600px) and (max-width:1199px){
+    .cntlogo img{
+        width:25px;
+        height: 25px;
+        margin-right: 10px;
+    }
+
+    #footer {
+        background: linear-gradient(to left,#9ce0b7,#b5f0cd,#86d1a4);
+        margin-bottom: 5px;
+        padding-top: 60px;
+    }
+    .logo img{
+        max-width: 170px;
+    }
+    .sociallogo img {
+        max-width: 45px;
+        padding: 5px;
+    }
+ 
+    .logo{
+        text-align: center;
+    }
+     .h1 {
+        font-size: 1.5rem;
+        color: #197639;
+        font-weight: 700;
+    
+        font-family: "Chillax";
+        margin-bottom: 15px;
+     
+    }
+    
+     .ab{
+        font-size: 18px;
+        color: #555;
+        line-height: 1.6;
+        font-family: "Lado";
+        font-style: italic;
+        font-weight: 300;
+        display: flex;
+    
+    }
+    .ab p:first-child{
+        color:rgb(24, 72, 32);
+        
+    }
+    
+     .contact {
+        display: flex;
+    }
+    
+    .contact img {
+        height: 30px;
+        width: 30px;
+        margin-right: 10px;
+    
+    }
+    .contactus{
+        display: flex;
+        justify-content: center;
+    }
+     .number {
+        font-size: 18px;
+        font-weight: bold;
+        color:rgb(24, 72, 32);
+        font-weight: 300px;
+    
+    }
+    .touch{
+        line-height: 1.5;
+        font-size: 18px;
+        font-family: "DM Serif Display", serif;
+        font-style: italic;
+    }
+     .request {
+       
+        font-weight: bold;
+    }
+    
+     .comname {
+       
+        margin-top: 50px;
+        text-align: center;
+        font-size: 14px;
+        padding-bottom: 3px;
+        color: #555;
+       
+        font-family: "Lado";
+        font-style: italic;
+        font-weight: 300;
+    
+    }
+    .ddview{
+        display: none;
+    }
+    .dd{
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+
+    }
+
+
+
+
+}
+@media only screen and (max-width:599px){
+
+    .cntlogo img{
+        width:25px;
+        height: 25px;
+        margin-right: 10px;
+    }
+    #footer {
+        background: linear-gradient(to left,#9ce0b7,#b5f0cd,#86d1a4);
+        margin-bottom: 5px;
+        padding-top: 20px;
+    }
+    .logo img{
+        max-width: 160px;
+    }
+    .sociallogo img {
+        max-width: 45px;
+        padding: 5px;
+    }
+
+
+     .h1 {
+        font-size: 1.5rem;
+        color: #197639;
+        font-weight: 700;
+      
+    
+        font-family: "Chillax";
+        margin-bottom: 15px;
+     
+    }
+    
+     .ab{
+        font-size: 18px;
+        color: #555;
+        line-height: 1.6;
+        font-family: "Lado";
+        font-style: italic;
+        font-weight: 300;
+        display: flex;
+    
+    }
+    .ab p:first-child{
+        color:rgb(24, 72, 32);
+        
+    }
+    
+     .contact {
+        display: flex;
+    }
+    
+    .contact img {
+        height: 30px;
+        width: 30px;
+        margin-right: 10px;
+    
+    }
+    
+     .number {
+        font-size: 18px;
+        font-weight: bold;
+        color:rgb(24, 72, 32);
+        font-weight: 300px;
+    
+    }
+    .touch{
+        line-height: 1.5;
+        font-size: 18px;
+        font-family: "DM Serif Display", serif;
+        font-style: italic;
+    }
+     .request {
+       
+        font-weight: bold;
+    }
+    
+     .comname {
+       
+        margin-top: 50px;
+        text-align: center;
+        font-size: 14px;
+        padding-bottom: 3px;
+        color: #555;
+       
+        font-family: "Lado";
+        font-style: italic;
+        font-weight: 300;
+    
+    }
+  
+    
+    .get{
+        text-align: center;
+        justify-content: center;
+
+        display: flex;
+        margin: 40px;
+
+    }
+    .contactus{
+        justify-content: center;
+        display: flex;
+        margin-top: 30px;
+
+    }
+    .followus{
+        margin-top: 20px;
+    }
+    .ddview{
+        display: none;
+    }
+
+}
+
 
 
 
