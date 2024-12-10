@@ -143,9 +143,10 @@
 @media only screen and (max-width: 599px) {
     header {
         background: linear-gradient(to left, #fff, #6df5a4,#fff);
-       position: fixed;
+   
        width: 100%;
        top: 0px;
+       left:0px;
        z-index: 1010;
     }
     .nav-links, .login-button {
@@ -211,9 +212,7 @@
     }
 
 
-    .header{
-        background: linear-gradient(to left, #fff, #6df5a4,#fff);
-    }
+  
     .offcanvas-menu{
         background: linear-gradient(to top, #fff, #6df5a4,#fff);
         width: 60%;

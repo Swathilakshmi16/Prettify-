@@ -1,7 +1,12 @@
 @media only screen and (min-width:1200px){
+    .learnimg{
+        display: none;
+    }
 
 
-
+    .ddview{
+        display: none;
+    }
     .overall{
         position: relative;
         height:auto 
@@ -114,7 +119,10 @@
     }
     
     
-    
+    .ticklogo{
+        width:30px;
+        height: 30px;
+    }
     
     
     
@@ -156,6 +164,12 @@
 
 
 @media only screen and (min-width:600px) and (max-width:1199px){
+    .learnimg{
+        display: none;
+    }
+    .ddview{
+        display: none;
+    }
     .overall{
         position: relative;
         height:auto 
@@ -299,7 +313,10 @@
     }
     
     
-    
+    .ticklogo{
+        width:30px;
+        height: 30px;
+    }
     
     
     
@@ -325,7 +342,8 @@
 @media only screen and (max-width:599px){
     .overall{
         position: relative;
-        height:auto 
+        width: 100%;
+        height: 100%;
     }
 
     #learn {
@@ -355,57 +373,18 @@
         font-size: 30px;
         font-family:'Chillax';
         text-align: center;
-        margin-bottom: 40px;
+        margin-bottom: 20px;
         letter-spacing: 1px;
         padding-bottom: 5px;
         // text-shadow: 6px 6px 7px rgba(0, 0, 0, 0.2);
     
     }
-    
-    
-    .box1,.box3,.box5 {
-        background-color: white; 
-        padding: 20px;
-        border-radius: 10px;
-        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
-        width: 350px;
-        
+    .size{
+        width:80%;
+        justify-content: center;
+        display: flex;
     }
-    
-    .box1:hover,
-    .box3:hover,
-    .box5:hover {
-        transform: translateY(-10px);
-        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-        background-color: white; 
-    }
-    
-    
-    
-    
-    
-    
-    
-    
-    .box2,.box4,.box6 {
-        background-color: white  ; 
-        padding: 20px;
-        border-radius: 10px;
-        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-       
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
-        width: 350px;
-        
-    }
-    
-    .box2:hover,
-    .box4:hover,
-    .box6:hover {
-        transform: translateY(-10px);
-        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-        background-color:white; 
-    }
+ 
     
     
     
@@ -418,9 +397,9 @@
     .box3 .h1,
     .box5 .h1 {
         font-size: 16px;
-        font-weight: bold;
+        font-weight: 1000;
         color: #197639;
-        margin-bottom: 10px;
+       
         font-family: "Chillax";
     }
     
@@ -428,11 +407,12 @@
     .box3 .para,
     .box5 .para {
         font-size: 16px; 
-        color: #555;
+        color: #111111;
         line-height: 1.6;
         font-family: "Lado";
         font-style: italic;
         font-weight: 300;
+        padding-left: 24px;     
     }
     
     
@@ -447,7 +427,7 @@
     .box4 .h1,
     .box6 .h1 {
         font-size: 16px;
-        font-weight: bold;
+        font-weight: 1000;
         color: #197639;
         margin-bottom: 10px;
         font-family: "Chillax";
@@ -457,32 +437,40 @@
     .box4 .para,
     .box6 .para {
         font-size: 16px;
-        color: #555;
+        color: #111111;
         line-height: 1.6;
         font-family: "Lado";
         font-style: italic;
         font-weight: 300;
+        padding-left: 24px;
     }
     
     
     
-    
-    
-    
-    
-    
-    .cont {
-        margin-bottom: 30px;
+    .row{
         justify-content: center;
-        align-items: center;
-       
-        display: flex;
-        
+    }
+    
+    .mbview{
+        display: none;
+    }
+    
+    
+
+    .ticklogo{
+        width:20px;
+        height: 20px;
     }
     
     .cont1 {
         margin-bottom: 30px;
         // background-color: #197639;
     }
+   
+  
     
 }
+
+
+
+
