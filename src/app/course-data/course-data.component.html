@@ -1,22 +1,199 @@
-<div class="make">
+<div class="make ddview">
   <div class="container">
   <h1 class="page-heading">Welcome to Prettify</h1>
 
+
+  <div class="coursedetail">
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-3 col-md-5 col-6">
+
+          <p class="head">Course Name: </p>
+          <p class="head">Course Duration: </p>
+          <p class="head">Total Video: </p>
+          <p class="head">Describtion: </p>
+    
+        </div>
+        
+        <div class="col-xl-9 col-md-7 col-6 ">
+          <p class="ans"> Aari Work</p>
+          <p class="ans"> 60mins</p>
+          <p class="ans"> 40 videos</p>
+          <p class="ans">Aari work is a traditional embroidery technique using a hooked needle to create intricate designs on fabric. </p>
+       
+        </div>
+      </div>
+    </div>
+  </div>
+
+
   <div class="row">
-    <div class="col-4" *ngFor="let channel of youTube">
+    <div class="col-xl-3 col-md-6 col-12 ucard" *ngFor="let channel of youTube">
+
       <div class="video-card">
         <div class="thumbnail-align">
-          <video [src]="channel.videoUrl" class="thumbnail" controls></video>
+          <iframe
+          class="thumbnail" controls
+          [src]="sanitizeUrl(channel.videoUrl)"
+          frameborder="0"
+          allowfullscreen
+ ></iframe>
         </div>
         <div class="video-info">
           <img [src]="channel.logoUrl" alt="Channel Logo" class="channel-logo">
           <div class="details">
-            <h3 class="video-title">{{ channel.videoTitle }}</h3>
-            <p class="channel-name">{{ channel.channelName }}</p>
-            <p class="views">{{ channel.views }}</p>
+            <p class="classnum">{{channel.classno}}</p>
+            <h3 class="video-title ">{{ channel.videoTitle }}</h3>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+</div>
+</div>
+
+
+
+
+
+
+
+<div class="make  mbview">
+  <div class="container">
+  <h1 class="page-heading">Welcome to Prettify</h1>
+
+  <div class="coursedetail dview">
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-3 col-md-5 col-6">
+          
+          <p class="head">Course Name: </p>
+          <p class="head">Course Duration: </p>
+          <p class="head">Total Video: </p>
+          <p class="head">Describtion: </p>
+    
+        </div>
+        
+        <div class="col-xl-9 col-md-7 col-6">
+          <p class="ans"> Aari Work</p>
+          <p class="ans"> 60mins</p>
+          <p class="ans"> 40 videos</p>
+          <p class="ans">Aari work is a traditional embroidery technique using a hooked needle to create intricate designs on fabric. </p>
+       
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="coursedetail mview">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="det">
+          <div class="par">
+            <p class="head">Course Name: </p>
+            <p class="ans"> Aari Work</p>
+          </div>
+          <div class="par">
+            <p class="head">Course Duration: </p>
+            <p class="ans"> 60mins</p>
+          </div>
+          <div class="par">
+            <p class="head">Total Video: </p>
+            <p class="ans"> 40 videos</p>
+          </div>
+          <div class="par">          
+            <p class="head">Describtion: </p>
+            <p class="ans">Aari work is a traditional embroidery technique using a hooked needle to create intricate designs on fabric. </p>
+          </div>
+        </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<div class="accordion accordion-flush" id="accordionFlushExample">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="flush-headingOne">
+      <button class="accordion-button classtopic" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="true" aria-controls="flush-collapseOne">
+        Aari work Classes
+      </button>
+    </h2>
+    <div id="flush-collapseOne" class="accordion-collapse collapse show" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">
+        <div class="video-card" *ngFor="let channel of youTube" (click)="itemDetail(channel)" data-bs-toggle="modal" data-bs-target="#myModal">
+          <div class="thumbnail-align">
+            <iframe
+              class="thumbnail"
+              [src]="sanitizeUrl(channel.videoUrl)"
+              frameborder="0"
+              allowfullscreen>
+            </iframe>
+          </div>
+          <div class="video-info">
+            <img
+              [src]="channel.logoUrl"
+              alt="Channel Logo"
+              class="channel-logo">
+            <div class="details">
+              <a href=""></a>
+              <p class="classnum">{{ channel.classno }}</p>
+              <h3 class="video-title">{{ channel.videoTitle }}</h3>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </div>
 </div>
+
+
+
+
+
+<div class="modal" id="myModal">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-body" *ngIf="items">
+      <div class="modal-header">
+        <!-- <h4 class="modal-title">{{items.classno }}</h4> -->
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+        <!-- <p class="classname">{{items.videoTitle}}</p> -->
+        <iframe
+    
+              class="videopop"
+              [src]="sanitizeUrl(items.videoUrl)"
+              frameborder="0"
+              allowfullscreen
+              allow='autoplay' 
+              >
+            </iframe>
+        
+       </div>
+
+     
+
+    </div>
+  </div>
+</div>  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
