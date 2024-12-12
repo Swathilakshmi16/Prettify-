@@ -1,3 +1,4 @@
+@media only screen and (min-width:1200px){
 #courses{
     background: linear-gradient(to right, #9ce0b7, #fff);
 
@@ -79,6 +80,178 @@
     justify-content: space-around;
 }
 
+}
 
 
+
+@media only screen and (min-width:600px) and (max-width:1199px){
+    #courses{
+        background: linear-gradient(to right, #9ce0b7, #fff);
+    
+    }
+  
+    
+    .card {
+        border: none;
+        border-radius: 15px;
+        overflow: hidden;
+        background: linear-gradient(145deg, #ffffff, #f0f0f0);
+        transition: transform 0.4s, box-shadow 0.4s;
+        width: 300px;
+        height: 399px;
+        margin-bottom: 20px;
+    
+    }
+    
+    .card:hover {
+        transform: translateY(-10px);
+        box-shadow: 8px 8px 16px #b4f595, -8px -8px 16px #b4f595;
+    }
+    
+    .card-img-top {
+        height: 200px;
+        object-fit: cover;
+        border-bottom: 2px solid #b4f595;
+    }
+    
+    .card-body {
+        padding: 20px;
+        text-align: center;
+    
+    }
+    
+    .card-title {
+        font-family: "chillax";
+        margin-left: 9px;
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: #197639;
+        margin-bottom: 10px;
+        text-transform: uppercase;
+        font-family: 'Chillax';
+        
+    }
+    
+    .card-text {
+    
+        font-size: 16px;
+        font-family: "Lato";
+        font-style: italic;
+        font-weight: 400;
+        color: #2b2626;
+    }
+    
+    .btn {
+        background: #119d09;
+        border: none;
+        color: #fff;
+        padding: 10px 20px;
+        border-radius: 24px;
+        font-size: 0.9rem;
+        font-family: "chillax";
+        
+    }
+    
+    .btn:hover {
+        background: #bbf1a2;
+        box-shadow: 0 5px 10px #119d09;
+        color: black;
+    }
+    
+    .cards {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 5pxpx;
+     
+        margin-top: 40px;
+        justify-content: space-around;
+    }
+    
+    }
+    
+    
+    
+    @media only screen and (max-width:599px){
+        #courses{
+            background: linear-gradient(to right, #9ce0b7, #fff);
+        
+        }
+        .card {
+            border: none;
+            border-radius: 15px;
+            overflow: hidden;
+            background: linear-gradient(145deg, #ffffff, #f0f0f0);
+            transition: transform 0.4s, box-shadow 0.4s;
+            width: 258px;
+            height: 399px;
+            margin-bottom: 20px;
+        
+        }
+        
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 8px 8px 16px #b4f595, -8px -8px 16px #b4f595;
+        }
+        
+        .card-img-top {
+            height: 200px;
+            object-fit: cover;
+            border-bottom: 2px solid #b4f595;
+        }
+        
+        .card-body {
+            padding: 20px;
+            text-align: center;
+        
+        }
+        
+        .card-title {
+            font-family: "chillax";
+            margin-left: 9px;
+            font-size: 23px;
+            font-weight: bold;
+            color: #197639;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            font-family: 'Chillax';
+            
+        }
+        
+        .card-text {
+        
+            font-size: 15px;
+            font-family: "Lato";
+            font-style: italic;
+            font-weight: 400;
+            color: #2b2626;
+        }
+        
+        .btn {
+            background: #119d09;
+            border: none;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 50px;
+            font-size: 0.9rem;
+            font-family: "chillax";
+            
+        }
+        
+        .btn:hover {
+            background: #bbf1a2;
+            box-shadow: 0 5px 10px #119d09;
+            color: black;
+        }
+        
+       
+        .cencard{
+            text-align: center;
+            justify-content: center;
+            display: flex;
+        }
+        
+        }
+        
+        
+        
 

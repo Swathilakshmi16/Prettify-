@@ -14,7 +14,11 @@ import { LandingComponent } from './landing/landing.component';
 import { CoursesComponent } from './courses/courses.component';
 import { OurAllCourseComponent } from './our-all-course/our-all-course.component';
 import { CoursecardComponent } from './coursecard/coursecard.component';
+
 import { HttpClientModule } from '@angular/common/http';
+
+import { CourseDataComponent } from './course-data/course-data.component';
+
 
 
 @NgModule({
@@ -31,6 +35,7 @@ import { HttpClientModule } from '@angular/common/http';
     CoursesComponent,
     OurAllCourseComponent,
     CoursecardComponent,
+    CourseDataComponent,
  
   ],
   imports: [

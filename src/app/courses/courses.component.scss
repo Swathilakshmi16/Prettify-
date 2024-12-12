@@ -1,17 +1,7 @@
-
+@media only screen and (min-width:1200px){
 #courses{
-   
-    background-color: #e3f7ea ;
+    background-color: #fff ;
 
-}
-.h1{
-    text-align: center;
-    padding-top: 60px;
-    padding-bottom: 40px;
-    color: #197639;
-    font-weight: 700;
-    font-size: 43px;
-    font-family: "Chillax";
 }
 
 .custom-btn {
@@ -41,3 +31,111 @@
 .button{
     padding: 50px;
 }
+.head{
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 15px;
+    color: #197639;
+    font-weight: 700;
+    font-size: 43px;
+    font-family: "Chillax";
+}
+  
+}
+@media only screen and (min-width:600px) and (max-width:1199px){
+    #courses{
+        background-color: #fff ;
+    
+    }
+    .head{
+        text-align: center;
+        padding-top: 30px;
+        padding-bottom: 15px;
+        color: #197639;
+        font-weight: 700;
+        font-size: 43px;
+        font-family: "Chillax";
+    }
+    
+    .custom-btn {
+        background-color: #119d09;
+        border: none;
+        border-radius: 30px; 
+        padding: 10px 30px;
+        font-size: 1.2rem; 
+        font-weight: bold;
+        color: #fff; 
+        transition: all 0.3s ease; 
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        font-family: "chillax"; 
+    }
+    
+    .custom-btn:hover {
+        background-color: #119d09;
+        box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2); 
+        transform: translateY(-3px);
+    }
+    
+    .custom-btn:active {
+        transform: translateY(1px); 
+        box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1); 
+    }
+    
+    .button{
+        padding: 50px;
+    }
+      
+    }
+    
+    
+    
+    @media only screen and (max-width:599px){
+        #courses{
+            background-color: #fff ;
+        
+        }
+        .head{
+            text-align: center;
+            padding-top: 60px;
+            padding-bottom: 40px;
+            color: #197639;
+            font-weight: 700;
+            font-size: 31px;
+            font-family: "Chillax";
+        }
+        
+        .custom-btn {
+            background-color: #119d09;
+            border: none;
+            border-radius: 30px; 
+            padding: 10px 30px;
+            font-size: 1.2rem; 
+            font-weight: bold;
+            color: #fff; 
+            transition: all 0.3s ease; 
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            font-family: "chillax"; 
+        }
+        
+        .custom-btn:hover {
+            background-color: #119d09;
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2); 
+            transform: translateY(-3px);
+        }
+        
+        .custom-btn:active {
+            transform: translateY(1px); 
+            box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1); 
+        }
+        
+        .button{
+            padding: 50px;
+        }
+          
+        }
+        
+        
+        
+        
+
+
