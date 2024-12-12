@@ -14,7 +14,7 @@ import { LandingComponent } from './landing/landing.component';
 import { CoursesComponent } from './courses/courses.component';
 import { OurAllCourseComponent } from './our-all-course/our-all-course.component';
 import { CoursecardComponent } from './coursecard/coursecard.component';
-
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -35,7 +35,8 @@ import { CoursecardComponent } from './coursecard/coursecard.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [
     provideClientHydration()
