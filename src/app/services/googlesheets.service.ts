@@ -15,9 +15,16 @@ export class GoogleSheetsService {
 
 
   getAllCourses(): Observable<any> {
-    const range = "AllCourse!A:E";
+    const range = "AllCourse!A:F";
     const url = `https://sheets.googleapis.com/v4/spreadsheets/${this.sheetId}/values/${range}?key=${this.apiKey}`
     return this.http.get(url);
   }
+
+  getCourseDetails(courseId:any): Observable<any> {
+    const range = `${courseId}!A:F`;
+    const url = `https://sheets.googleapis.com/v4/spreadsheets/${this.sheetId}/values/${range}?key=${this.apiKey}`
+    return this.http.get(url);
+  }
+
 
 }
