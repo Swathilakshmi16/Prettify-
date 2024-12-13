@@ -1,4 +1,6 @@
 import { Component, EventEmitter, Output } from '@angular/core';
+import { GoogleSheetsService } from '../services/googlesheets.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-courses',
@@ -6,27 +8,51 @@ import { Component, EventEmitter, Output } from '@angular/core';
   styleUrl: './courses.component.scss'
 })
 export class CoursesComponent {
-  courses=[
-    {
-      imageUrl:"../../assets/howitworkimg1.jpg",
-      courseName:"Aari Work",
-      describtion:"Learn traditional embroidery techniques with intricate designs using an Aari needle."
-    },
-    {
-      imageUrl:"../../assets/howitworkimg1.jpg",
-      courseName:"Aari Work",
-      describtion:"Learn traditional embroidery techniques with intricate designs using an Aari needle."
-    },
-    {
-      imageUrl:"../../assets/howitworkimg1.jpg",
-      courseName:"Aari Work",
-      describtion:"Learn traditional embroidery techniques with intricate designs using an Aari needle."
-    },
-    {
-      imageUrl:"../../assets/howitworkimg1.jpg",
-      courseName:"Aari Work",
-      describtion:"Learn traditional embroidery techniques with intricate designs using an Aari needle."
-    }
-  ]
+
+  courses: any[] = [];
+
+ 
+  constructor(
+    private googleSheetsService: GoogleSheetsService,
+    private router : Router
+  ) {}
+
+  ngOnInit(): void {
+    this.getAllCourses();
+  }
+
+  getAllCourses(): void {
+    var data;
+    this.googleSheetsService.getAllCourses().subscribe(
+      (response: any) => {
+        const sheetData = response.values;
+        if (sheetData?.length > 0) {
+          const headers = sheetData[0];
+          const colIndex = (colName: string) => headers.indexOf(colName);
+          data = sheetData.slice(1).map((course: any) => ({
+            courseId: course[colIndex('courseId')],
+            courseName: course[colIndex('courseName')],
+            imageUrl: course[colIndex('imageUrl')],
+            description: course[colIndex('description')],
+            rate: course[colIndex('rate')],
+            duration: course[colIndex('duration')],
+            totalVideo: course[colIndex('totalVideo')],
+          }));
+          this.courses = data.slice(0,4)
+        }
+      },
+      (error: any) => {
+        console.error('Error fetching data:', error);
+      }
+    );
+  }
+
+
+
+
+
+
+
+
 
 }

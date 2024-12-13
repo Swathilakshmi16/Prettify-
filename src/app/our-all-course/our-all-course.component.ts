@@ -24,11 +24,13 @@ export class OurAllCourseComponent implements OnInit{
           const headers = sheetData[0];
           const colIndex = (colName: string) => headers.indexOf(colName);
           this.courses = sheetData.slice(1).map((course: any) => ({
+            courseId: course[colIndex('courseId')],
             courseName: course[colIndex('courseName')],
             imageUrl: course[colIndex('imageUrl')],
             description: course[colIndex('description')],
             rate: course[colIndex('rate')],
             duration: course[colIndex('duration')],
+            totalVideo: course[colIndex('totalVideo')],
           }));
         }
       },

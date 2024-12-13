@@ -56,7 +56,7 @@ body {
 }
 
 button {
-    width: 100%;
+    width: 50%;
     padding: 10px 15px;
     font-size: 1rem;
     font-weight: bold;
@@ -66,7 +66,10 @@ button {
     border-radius: 5px;
     cursor: pointer;
     transition: background 0.3s;
+   text-align: center;
+   margin: 20px;
 }
+
 
 button:hover {
     background: #5A1470;
@@ -77,14 +80,14 @@ button:hover {
     margin-top: 10px;
     padding: 20px;
     font-weight: bold;
-    width: fit-content;
-    font-family: "EB Garamond", serif;
+    font-family: "chillax";
     font-optical-sizing: auto;
     text-shadow: 6px 6px 7px rgba(0, 0, 0, 0.2); 
     color: #ff7043;
     overflow: hidden;
     white-space: nowrap;
-    animation: typing 2s steps(30, end);
+    text-align: center;
+    
 }
 
 @keyframes typing {
