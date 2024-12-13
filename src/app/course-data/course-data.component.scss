@@ -84,29 +84,35 @@
   padding: 30px;
   margin-bottom: 20px;
   border-radius: 30px;
-  justify-content: center;
-  display: flex;
-  align-items: center;
-  display: flex;
 }
 .head{
   color:#197639 ;
   font-family: "Chillax" ;
   font-weight: 900px;
   font-size: 20px;
-  text-align: right;
-
+  padding-left: 80px;
 }
-
+.crs{
+  display: flex;
+}
 .ans{
   font-family: "Chillax" ;
   font-size: 20px;  
-  margin-top: 2px;
+
 }
-.mbview{
-  display: none;
+.ans1{
+  padding-left: 39px;
 }
-.mview{
+.ans2{
+  padding-left: 12px;
+}
+.ans3{
+  padding-left: 58px;
+}
+.ans4{
+  padding-left: 55px;
+}
+.ddview{
   display: none;
 }
 
@@ -198,29 +204,37 @@
     padding: 30px;
     margin-bottom: 20px;
     border-radius: 30px;
-    justify-content: center;
-    display: flex;
-    align-items: center;
-    display: flex;
+
   }
   .head{
     color:#197639 ;
     font-family: "Chillax" ;
     font-weight: 900px;
-    font-size: 16px;
-    text-align: right;
-  
+    font-size: 17px;
+    padding-left: 20px;
   }
-  
+  .crs{
+    display: flex;
+  }
   .ans{
     font-family: "Chillax" ;
-    font-size: 16px;  
-    margin-top: 2px;
+    font-size: 17px;  
+  
   }
-  .mbview{
-    display: none;
+  
+  .ans1{
+    padding-left: 39px;
   }
-  .mview{
+  .ans2{
+    padding-left: 17px;
+  }
+  .ans3{
+    padding-left: 58px;
+  }
+  .ans4{
+    padding-left: 55px;
+  }
+  .ddview{
     display: none;
   }
   }
@@ -317,32 +331,28 @@
     }
     .coursedetail{
       background-color: #fff;
-      padding-top: 29px;
+      padding: 30px;
       margin-bottom: 20px;
       border-radius: 30px;
-      justify-content: center;
-      display: flex;
-      align-items: center;
-      display: flex;
     }
     .head{
       color:#197639 ;
       font-family: "Chillax" ;
       font-weight: 900px;
-      font-size: 15px;
-      font-weight: 1000;
-    
-    
+      font-size: 14px;
+   
     }
-    
+    .crs{
+      display: flex;
+    }
     .ans{
       font-family: "Chillax" ;
-      font-size: 13px;  
-      margin-top: 2px;
+      font-size: 14px;  
+    
     }
-    .ddview{
-      display: none;
-    }
+  
+    
+   
     .thumbnail{
       display: none;
     }
@@ -357,12 +367,8 @@
       color: #197639;
       font-family: "Chillax";
     }
-    .dview{
-      display: none;
-    }
-    .par{
-      display: flex;
-    }
+
+
     .det{
       margin-left: 10px;
     }
@@ -412,4 +418,8 @@
     .modal{
       border-color:  rgb(0 0 0 / 0%);
     }
+    .mdview{
+      display: none;
+    }
+    
     }
