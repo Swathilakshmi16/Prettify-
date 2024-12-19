@@ -9,11 +9,15 @@ import { GoogleSheetsService } from '../services/googlesheets.service';
   styleUrls: ['./course-data.component.scss']
 })
 export class CourseDataComponent {
+ 
 
   courseId: any;
   courses: any;
   youTube: any;
   items: any;
+
+ 
+  
 
   constructor(
     private sanitizer: DomSanitizer,
@@ -52,6 +56,8 @@ export class CourseDataComponent {
             totalVideo: course[colIndex('totalVideo')],
           }));
           this.courses = data.find((c: any) => c.courseId === courseId);
+          const courseList = JSON.parse(window.localStorage.getItem("courses") || "[]");
+          this.isCourseSubscribed = courseList.includes(this.courses.courseId);
         }
       },
       (error: any) => console.error('Error fetching courses:', error)
@@ -69,6 +75,7 @@ export class CourseDataComponent {
             videoTitle: course[colIndex('videoTitle')],
             videoUrl: course[colIndex('videoUrl')],
             videoProfile: course[colIndex('videoProfile')],
+            courseLogo: course[colIndex('courseLogo')],
           }));
         }
       },
@@ -97,4 +104,20 @@ export class CourseDataComponent {
   itemDetail(item: any): void {
     this.items = item;
   }
+
+  isCourseSubscribed:any;
+
+  handleVideoClick() {
+    if (!this.isCourseSubscribed) {
+      const modalElement = document.getElementById('subscribeModal');
+      if (modalElement) {
+        const modalInstance = new bootstrap.Modal(modalElement);
+        modalInstance.show();
+      } else {
+        console.error('Modal element not found!');
+      }
+    }
+  }
 }
+
+declare var bootstrap :any

@@ -1,0 +1,31 @@
+<div class="popup">
+  <div class="modal fade" id="subscribeModal" tabindex="-1" aria-labelledby="subscribeModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <p class="modal-title" id="subscribeModalLabel">Subscribe Prettify</p>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form id="subscribeForm">
+            <div class="mb-3 input">
+              <label for="email" class="form-label " required>Email address</label>
+              <input type="email" class="form-control" id="email" placeholder="Enter your email" [(ngModel)]="courseName"  required>
+            </div>
+            <div class="mb-3 input">
+              <label for="email" class="form-label" required>Contact No</label>
+              <input type="email" class="form-control" id="email" placeholder="Enter your email" [(ngModel)]="contactNo" required>
+            </div>
+            <div class="mb-3 input">
+              <label for="email" class="form-label" required>CourseName</label>
+              <input type="email" class="form-control" id="email" placeholder="Enter your email" [(ngModel)]="email"   required>
+            </div>
+            <div class="popup-btn-div">
+              <button type="submit" class="popup-btn"  (click)="openWhatsAppChat()"> Submit</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

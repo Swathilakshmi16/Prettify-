@@ -18,6 +18,8 @@ import { CoursecardComponent } from './coursecard/coursecard.component';
 import { HttpClientModule } from '@angular/common/http';
 
 import { CourseDataComponent } from './course-data/course-data.component';
+import { FormsModule } from '@angular/forms';
+import { SubscribeComponent } from './subscribe/subscribe.component';
 
 
 
@@ -36,12 +38,14 @@ import { CourseDataComponent } from './course-data/course-data.component';
     OurAllCourseComponent,
     CoursecardComponent,
     CourseDataComponent,
+    SubscribeComponent,
  
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [
     provideClientHydration()

@@ -1,15 +1,13 @@
 <div class="container">
     <div class="form-container">
         <p class="title-1">Log In</p>
-        <form action="#" method="post">
             <div class="input-group">
-                <input type="text" name="name" placeholder="User Id" required>
+                <input type="text" name="name" [(ngModel)]="userId" placeholder="User Id" required>
             </div>
            
             <div class="input-group">
-                <input type="password" name="password" placeholder="Password" required>
+                <input type="password" name="password" [(ngModel)]="password"  placeholder="Password" required>
             </div>
-            <button type="submit">Login</button>
-        </form>
+            <button type="submit" (click)="login()">Login</button>
     </div>
 </div>

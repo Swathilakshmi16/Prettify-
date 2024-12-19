@@ -115,7 +115,9 @@
 .ddview{
   display: none;
 }
-
+.video-title{
+  font-size: 18px;
+}
 }
 
 @media only screen and (min-width:600px) and (max-width:1199px){
@@ -236,6 +238,9 @@
   }
   .ddview{
     display: none;
+  }
+  .video-title{
+    font-size: 18px;
   }
   }
 
@@ -420,6 +425,9 @@
     }
     .mdview{
       display: none;
+    }
+    .cdcon{
+      width:80%
     }
     
     }
