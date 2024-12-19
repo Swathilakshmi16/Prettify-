@@ -68,6 +68,7 @@ export class CourseDataComponent {
           this.youTube = sheetData.slice(1).map((course: any) => ({
             videoTitle: course[colIndex('videoTitle')],
             videoUrl: course[colIndex('videoUrl')],
+            videoProfile: course[colIndex('videoProfile')],
           }));
         }
       },
