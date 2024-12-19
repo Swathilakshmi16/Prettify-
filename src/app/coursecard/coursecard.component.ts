@@ -14,7 +14,7 @@ export class CoursecardComponent {
     ) {}
 
   goCourse(course:any){
-    this.router.navigate([`courses/${course.courseId}`, { state: { course: course } }])
+    this.router.navigate([`courses/${course.courseId}`])
   }
 
 

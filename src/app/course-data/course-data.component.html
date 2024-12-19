@@ -1,143 +1,127 @@
 <div class="make">
-  
+
   <h1 class="page-heading">Welcome to Prettify</h1>
 
 
-    <div class="container">
-      <div class="row">
-        <div class="coursedetail">
+  <div class="container" *ngIf="courses">
+    <div class="row">
+      <div class="coursedetail">
         <div class="col-12">
           <div class="crs">
-          <p class="head">Course Name:</p>
-          <p class="ans ans1">Aari Work</p>
-        </div>
-        </div>
-        <div class="col-12">
-          <div class="crs">
-          <p class="head">Course Duration:</p>
-          <p class="ans ans2">60mins</p>
-        </div>
+            <p class="head">Course Name:</p>
+            <p class="ans ans1">{{courses.courseName}}</p>
+          </div>
         </div>
         <div class="col-12">
           <div class="crs">
-          <p class="head">Total Video:</p>
-          <p class="ans ans3">40 videos</p>
-        </div>
+            <p class="head">Course Duration:</p>
+            <p class="ans ans2">{{courses.duration}}</p>
+          </div>
         </div>
         <div class="col-12">
           <div class="crs">
-          <p class="head">Describtion:</p>
-          <p class="ans ans4">Aari work is a traditional embroidery technique using a hooked needle to create intricate designs on fabric. </p>
+            <p class="head">Total Video:</p>
+            <p class="ans ans3">{{courses.totalVideo}} videos</p>
+          </div>
         </div>
-        </div>
+        <div class="col-12">
+          <div class="crs">
+            <p class="head">Description:</p>
+            <p class="ans ans4">{{courses.description}}</p>
+          </div>
         </div>
       </div>
     </div>
+  </div>
 
 
   <div class="container mdview">
-  <div class="row">
-    <div class="col-xl-3 col-md-6 col-12 ucard" *ngFor="let channel of youTube">
-      <div class="video-card">
-        <div class="thumbnail-align">
-          <iframe
-          class="thumbnail" controls
-          [src]="sanitizeUrl(channel.videoUrl)"
-          frameborder="0"
-          allowfullscreen
- ></iframe>
-        </div>
-        <div class="video-info">
-          <img [src]="channel.logoUrl" alt="Channel Logo" class="channel-logo">
-          <div class="details">
-            <p class="classnum">{{channel.classno}}</p>
-            <h3 class="video-title ">{{ channel.videoTitle }}</h3>
+    <div class="row">
+      <div class="col-xl-3 col-md-6 col-12 ucard" *ngFor="let channel of youTube">
+        <div class="video-card">
+          <div class="thumbnail-align">
+            <iframe class="thumbnail" controls [src]="sanitizeUrl(channel.videoUrl)" frameborder="0" allowfullscreen
+               ></iframe>
           </div>
+          <div class="video-info">
+            <img [src]="channel.logoUrl" alt="Channel Logo" class="channel-logo">
+            <div class="details">
+              <p class="classnum">{{channel.classno}}</p>
+              <h3 class="video-title ">{{ channel.videoTitle }}</h3>
+            </div>
+          </div>
+
         </div>
 
       </div>
-
     </div>
   </div>
-  </div>
 
-<div class="container ddview">
-<div class="accordion accordion-flush ddview" id="accordionFlushExample">
-  <div class="accordion-item">
-    <h2 class="accordion-header" id="flush-headingOne">
-      <button class="accordion-button classtopic" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="true" aria-controls="flush-collapseOne">
-        Aari work Classes
-      </button>
-    </h2>
-    <div id="flush-collapseOne" class="accordion-collapse collapse show" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-      <div class="accordion-body">
-        <div class="video-card" *ngFor="let channel of youTube" (click)="itemDetail(channel)" data-bs-toggle="modal" data-bs-target="#myModal">
-          <div class="thumbnail-align">
-            <iframe
-              class="thumbnail"
-              [src]="sanitizeUrl(channel.videoUrl)"
-              frameborder="0"
-              allowfullscreen>
-            </iframe>
-          </div>
-          <div class="video-info">
-            <img
-              [src]="channel.logoUrl"
-              alt="Channel Logo"
-              class="channel-logo">
-            <div class="details">
-              <a href=""></a>
-              <p class="classnum">{{ channel.classno }}</p>
-              <h3 class="video-title">{{ channel.videoTitle }}</h3>
+  <div class="container ddview">
+    <div class="accordion accordion-flush ddview" id="accordionFlushExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingOne">
+          <button class="accordion-button classtopic" type="button" data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseOne" aria-expanded="true" aria-controls="flush-collapseOne">
+            Aari work Classes
+          </button>
+        </h2>
+        <div id="flush-collapseOne" class="accordion-collapse collapse show" aria-labelledby="flush-headingOne"
+          data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">
+            <div class="video-card" *ngFor="let channel of youTube" (click)="itemDetail(channel)" data-bs-toggle="modal"
+              data-bs-target="#myModal">
+              <div class="thumbnail-align">
+                <iframe class="thumbnail" [src]="sanitizeUrl(channel.videoUrl)" frameborder="0" allowfullscreen>
+                </iframe>
+              </div>
+              <div class="video-info">
+                <img [src]="channel.logoUrl" alt="Channel Logo" class="channel-logo">
+                <div class="details">
+                  <a href=""></a>
+                  <p class="classnum">{{ channel.classno }}</p>
+                  <h3 class="video-title">{{ channel.videoTitle }}</h3>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</div>
 
 
 
 
 
-<div class="modal" id="myModal">
-  <div class="modal-dialog modal-dialog-centered">
-    <div class="modal-content">
-      <div class="modal-body" *ngIf="items">
-      <div class="modal-header">
-        <!-- <h4 class="modal-title">{{items.classno }}</h4> -->
-        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-      </div>
-        <!-- <p class="classname">{{items.videoTitle}}</p> -->
-        <iframe
-    
-              class="videopop"
-              [src]="sanitizeUrl(items.videoUrl)"
-              frameborder="0"
-              allowfullscreen 
-              >
+    <div class="modal" id="myModal">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-body" *ngIf="items">
+            <div class="modal-header">
+              <!-- <h4 class="modal-title">{{items.classno }}</h4> -->
+              <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <!-- <p class="classname">{{items.videoTitle}}</p> -->
+            <iframe class="videopop" [src]="sanitizeUrl(items.videoUrl)" frameborder="0" allowfullscreen>
             </iframe>
-        
-       </div>
 
-     
+          </div>
 
+
+
+        </div>
+      </div>
     </div>
+
   </div>
-</div>  
+
+
+
+
+
+
+
+
+
 
 </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
