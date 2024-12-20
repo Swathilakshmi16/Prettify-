@@ -12,12 +12,22 @@ export class SubscribeComponent {
   contactNo: string = '';
   courseName: string = '';
 
-
   openWhatsAppChat() {
-      const phoneNumber = '9943978066';
-      const message = `Hello, I am interested in the course. \nEmail: ${this.email} \nContact No: ${this.contactNo} \nCourse Name: ${this.courseName}`;
-      const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+    const phoneNumber = '916374884833'; 
+    const message = `
+      Hello, I am interested in the course.
+      Email: ${this.email}
+      Contact No: ${this.contactNo}
+      Course Name: ${this.courseName}
+    `;
+
+    const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+
+    if (this.email && this.contactNo && this.courseName) {
       window.open(whatsappUrl, '_blank');
+    } else {
+      alert('Please fill in all fields before submitting.');
+    }
   }
 
 }
