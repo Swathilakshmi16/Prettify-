@@ -1,0 +1,163 @@
+@media only screen and (min-width:1200px){
+
+.modal-content{
+    background: linear-gradient(to right, #9ce0b7, #fff);
+    font-family: "chillax"; 
+}
+
+.popup-btn {
+    background-color: #119d09;
+    border: none;
+    border-radius: 30px; 
+    padding: 10px 30px;
+    font-size: 15px; 
+    font-weight: bold;
+    color: #fff; 
+    transition: all 0.3s ease; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-family: "chillax"; 
+
+}
+.popup-btn-div{
+    align-items: center;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+
+}
+.form-control:hover{
+    box-shadow: 2px 2px 2px #9ce0b7;
+    
+}
+.modal-title{
+    font-size: 20px;
+    color: #119d09;
+    margin-left: 20px;
+ 
+}
+.form-label{
+    font-size: 13px;
+    width: 144px;
+}
+.input{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+}
+.form-control{
+    font-size: 13px;
+}
+}
+
+@media only screen and (min-width:600px) and (max-width:1199px){
+
+    .modal-content{
+        background: linear-gradient(to right, #9ce0b7, #fff);
+        font-family: "chillax"; 
+    }
+    
+    .popup-btn {
+        background-color: #119d09;
+        border: none;
+        border-radius: 30px; 
+        padding: 10px 30px;
+        font-size: 15px; 
+        font-weight: bold;
+        color: #fff; 
+        transition: all 0.3s ease; 
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        font-family: "chillax"; 
+    
+    }
+    .popup-btn-div{
+        align-items: center;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+    
+    }
+    .form-control:hover{
+        box-shadow: 2px 2px 2px #9ce0b7;
+        
+    }
+    .modal-title{
+        font-size: 20px;
+        color: #119d09;
+        margin-left: 20px;
+
+    }
+    .form-label{
+        font-size: 13px;
+        width: 144px;
+    }
+    .input{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    
+    }
+    .form-control{
+        font-size: 13px;
+    }
+}
+
+
+@media only screen and (max-width:599px){
+
+    .modal-content{
+        background: linear-gradient(to right, #9ce0b7, #fff);
+        font-family: "chillax"; 
+    }
+    
+    .popup-btn {
+        background-color: #119d09;
+        border: none;
+        border-radius: 30px; 
+        padding: 5px 20px;
+        font-size: 15px; 
+        font-weight: bold;
+        color: #fff; 
+        transition: all 0.3s ease; 
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        font-family: "chillax"; 
+    
+    }
+    .popup-btn-div{
+        align-items: center;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+    
+    }
+    .form-control:hover{
+        box-shadow: 2px 2px 2px #9ce0b7;
+        
+    }
+    .modal-title{
+        font-size: 20px;
+        color: #119d09;
+        margin-left: 20px;
+        
+    }
+    .form-label{
+        font-size: 13px;
+        width: 144px;
+    }
+    .input{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin-bottom: 8px;
+    
+    }
+    .form-control{
+        font-size: 13px;
+    }
+    
+
+    
+}

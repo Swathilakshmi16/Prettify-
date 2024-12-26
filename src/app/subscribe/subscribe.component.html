@@ -1,0 +1,57 @@
+<div class="popup">
+  <div class="modal fade" id="subscribeModal" tabindex="-1" aria-labelledby="subscribeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header ">
+         
+          <p class="modal-title text-center" id="subscribeModalLabel">Subscribe Prettify</p>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="mb-3 input">
+              <label for="email" class="form-label">Email Address</label>
+              <input
+                type="email"
+                class="form-control"
+                id="email"
+                placeholder="Enter your email"
+                [(ngModel)]="email"
+                name="email"
+                required
+              >
+            </div>
+            <div class="mb-3 input">
+              <label for="contactNo" class="form-label">Contact No</label>
+              <input
+                type="number"
+                minlength="10"
+                class="form-control"
+                id="contactNo"
+                placeholder="Enter your contact number"
+                [(ngModel)]="contactNo"
+                name="contactNo"
+                required
+              >
+            </div>
+            <div class="mb-3 input">
+              <label for="courseName" class="form-label">Course Name</label>
+              <input
+                type="text"
+                class="form-control"
+                id="courseName"
+                placeholder="Enter the course name"
+                [(ngModel)]="courseName"
+                name="courseName"
+                required
+              >
+            </div>
+            <div class="popup-btn-div">
+              <button type="button" class="popup-btn" (click)="openWhatsAppChat()">Submit</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
