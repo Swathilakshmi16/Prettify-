@@ -1,7 +1,5 @@
 <div class="make">
-
   <h1 class="page-heading">Welcome to Prettify</h1>
-
 
   <div class="container cdcon" *ngIf="courses">
     <div class="row">
@@ -34,41 +32,139 @@
     </div>
   </div>
 
+<div class="container mdview">
+  <div class="accordion" id="basicAccordion">
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#basicCollapse" aria-expanded="true" aria-controls="basicCollapse">
+          Basic Classes
+        </button>
+      </h2>
+      <div id="basicCollapse" class="accordion-collapse collapse show" data-bs-parent="#basicAccordion">
+        <div class="accordion-body p-0">
+          <div class="row">
+            <div class="col-xl-3 col-md-6 col-12 ucard" *ngFor="let channel of basicYouTube" (click)="handleVideoClick()">
+              <div class="video-card">
+                <div class="thumbnail-align">
+                  <iframe *ngIf="isCourseSubscribed" class="thumbnail" [src]="sanitizeUrl(channel.videoUrl)" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div class="video-info">
+                  <img [src]="channel.courseLogo" alt="Channel Logo" class="channel-logo">
+                  <div class="details">
+                    <p class="classnum">{{ channel.classno }}</p>
+                    <h3 class="video-title">{{ channel.videoTitle }}</h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div> 
+        </div> 
+      </div>
+    </div>
+  </div>
+</div>
 
-  <div class="container mdview">
-    <div class="row">
-      <div class="col-xl-3 col-md-6 col-12 ucard" *ngFor="let channel of youTube"  (click)="handleVideoClick()">
-        <div class="video-card">
-          <div class="thumbnail-align">
-            <iframe *ngIf="isCourseSubscribed" class="thumbnail" controls [src]="sanitizeUrl(channel.videoUrl)" frameborder="0" allowfullscreen
-           ></iframe>
-          </div>
-          <div class="video-info">
-            <img [src]="channel.courseLogo" alt="Channel Logo" class="channel-logo">
-            <div class="details">
-              <p class="classnum">{{channel.classno}}</p>
-              <h3 class="video-title ">{{ channel.videoTitle }}</h3>
+
+<div class="container mdview classes">
+  <div class="accordion" id="courseAccordion">
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#courseCollapse" aria-expanded="true" aria-controls="courseCollapse">
+          {{courses.courseName}}
+        </button>
+      </h2>
+      <div id="courseCollapse" class="accordion-collapse collapse show" data-bs-parent="#courseAccordion">
+        <div class="accordion-body p-0">
+          <div class="row">
+            <div class="col-xl-3 col-md-6 col-12 ucard" *ngFor="let channel of youTube" (click)="handleVideoClick()">
+              <div class="video-card">
+                <div class="thumbnail-align">
+                  <iframe *ngIf="isCourseSubscribed" class="thumbnail" [src]="sanitizeUrl(channel.videoUrl)" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div class="video-info">
+                  <img [src]="channel.courseLogo" alt="Channel Logo" class="channel-logo">
+                  <div class="details">
+                    <p class="classnum">{{ channel.classno }}</p>
+                    <h3 class="video-title">{{ channel.videoTitle }}</h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div> 
+        </div> 
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container ddview">
+  <div class="accordion accordion-flush ddview" id="accordionBasic" >
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingBasic">
+        <button class="accordion-button classtopic" type="button" data-bs-toggle="collapse"
+          data-bs-target="#collapseBasic" aria-expanded="true" aria-controls="collapseBasic">
+          Basic Classes
+        </button>
+      </h2>
+      <div id="collapseBasic" class="accordion-collapse collapse show" aria-labelledby="	headingBasic"
+        data-bs-parent="#accordionBasic" (click)="handleVideoClick()">
+        <div class="accordion-body">
+          <div class="col-xl-3 col-md-6 col-12 ucard" *ngFor="let channel of basicYouTube" (click)="handleVideoClick()">
+            <div class="video-card">
+              <div class="thumbnail-align">
+                <iframe *ngIf="isCourseSubscribed" class="thumbnail" [src]="sanitizeUrl(channel.videoUrl)" frameborder="0" allowfullscreen></iframe>
+              </div>
+              <div class="video-info">
+                <img [src]="channel.courseLogo" alt="Channel Logo" class="channel-logo">
+                <div class="details">
+                  <p class="classnum">{{ channel.classno }}</p>
+                  <h3 class="video-title">{{ channel.videoTitle }}</h3>
+                </div>
+              </div>
             </div>
           </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+  <div class="modal" id="myModal" *ngIf="isCourseSubscribed">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-body" *ngIf="items">
+          <div class="modal-header">
+            <!-- <h4 class="modal-title">{{items.classno }}</h4> -->
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <!-- <p class="classname">{{items.videoTitle}}</p> -->
+          <iframe class="videopop" [src]="sanitizeUrl(items.videoUrl)" frameborder="0" allowfullscreen >
+          </iframe>
 
         </div>
+
+
 
       </div>
     </div>
   </div>
-  
 
-  <div class="container ddview">
-    <div class="accordion accordion-flush ddview" id="accordionFlushExample" >
+</div>
+
+  <div class="container ddview dynamic-classes">
+    <div class="accordion accordion-flush ddview" id="accordionCourse" >
       <div class="accordion-item">
-        <h2 class="accordion-header" id="flush-headingOne">
+        <h2 class="accordion-header" id="	headingCourse">
           <button class="accordion-button classtopic" type="button" data-bs-toggle="collapse"
-            data-bs-target="#flush-collapseOne" aria-expanded="true" aria-controls="flush-collapseOne">
-            Aari work Classes
+            data-bs-target="#collapseCourse" aria-expanded="true" aria-controls="collapseCourse">
+            {{courses.courseName}}
           </button>
         </h2>
-        <div id="flush-collapseOne" class="accordion-collapse collapse show" aria-labelledby="flush-headingOne"
-          data-bs-parent="#accordionFlushExample" (click)="handleVideoClick()">
+        <div id="collapseCourse" class="accordion-collapse collapse show" aria-labelledby="	headingCourse"
+          data-bs-parent="#accordionCourse" (click)="handleVideoClick()">
           <div class="accordion-body">
             <div class="video-card" *ngFor="let channel of youTube" (click)="itemDetail(channel)" data-bs-toggle="modal"
               data-bs-target="#myModal">
@@ -93,9 +189,6 @@
     </div>
 
 
-
-
-
     <div class="modal" id="myModal" *ngIf="isCourseSubscribed">
       <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
@@ -107,10 +200,7 @@
             <!-- <p class="classname">{{items.videoTitle}}</p> -->
             <iframe class="videopop" [src]="sanitizeUrl(items.videoUrl)" frameborder="0" allowfullscreen >
             </iframe>
-
           </div>
-
-
 
         </div>
       </div>
@@ -118,17 +208,17 @@
 
   </div>
 
-
-
-
-
-
-
-
-
-
+ 
 </div>
 
 
 
 <app-subscribe></app-subscribe>
+
+
+
+
+
+
+
+

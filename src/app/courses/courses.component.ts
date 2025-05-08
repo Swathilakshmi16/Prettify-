@@ -21,15 +21,16 @@ export class CoursesComponent {
     this.getAllCourses();
   }
 
+  allCourses: any[] = [];
+
   getAllCourses(): void {
-    var data;
     this.googleSheetsService.getAllCourses().subscribe(
       (response: any) => {
         const sheetData = response.values;
         if (sheetData?.length > 0) {
           const headers = sheetData[0];
           const colIndex = (colName: string) => headers.indexOf(colName);
-          data = sheetData.slice(1).map((course: any) => ({
+          this.allCourses = sheetData.slice(1).map((course: any) => ({
             courseId: course[colIndex('courseId')],
             courseName: course[colIndex('courseName')],
             imageUrl: course[colIndex('imageUrl')],
@@ -38,7 +39,7 @@ export class CoursesComponent {
             duration: course[colIndex('duration')],
             totalVideo: course[colIndex('totalVideo')],
           }));
-          this.courses = data.slice(0,4)
+          this.courses = this.allCourses.slice(0, 4);
         }
       },
       (error: any) => {
@@ -46,9 +47,10 @@ export class CoursesComponent {
       }
     );
   }
+  
 
 
-
+ 
 
 
 

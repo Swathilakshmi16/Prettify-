@@ -10,8 +10,8 @@ export class GoogleSheetsService {
   constructor(
     private http:HttpClient
   ) { }
-  apiKey = "AIzaSyDFsJwZ3co3txpEdUXRnPLTwgOd6TOhd4E";
-  sheetId = "1ynhjNH52gXjaRh3EwpWMtxTt_Sss51V6Sy12X0xUA1c";
+  apiKey = "AIzaSyCDoCf7LSARUjgfesnQmm6-Jo4igswmY0Q";
+  sheetId = "1fI7SCo0C8Un0FOBS_0EbrvUf5orRgRt_-R8KbMkpieI";
   
   getAllCourses(): Observable<any> {
     const range = "AllCourse!A:G";
@@ -29,6 +29,10 @@ export class GoogleSheetsService {
     const url = `https://sheets.googleapis.com/v4/spreadsheets/${this.sheetId}/values/${range}?key=${this.apiKey}`
     return this.http.get(url);
   }
-
+  getBasic(): Observable<any> {
+    const range = "Basic!A:G";
+    const url = `https://sheets.googleapis.com/v4/spreadsheets/${this.sheetId}/values/${range}?key=${this.apiKey}`
+    return this.http.get(url);
+  }
 
 }

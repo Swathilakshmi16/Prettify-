@@ -52,16 +52,17 @@
     .nav-links a {
         text-decoration: none;
         color: black;
-        font-size: 25px;
+        font-size: 20px;
     }
 
     .login-button .btn {
         background-color: green;
         color: white;
-        padding: 8px 15px;
+        padding: 6px 40px;
         text-decoration: none;
-        border-radius: 5px;
+        border-radius: 8px;
         font-size: 20px;
+        margin: 0px;
     }
 
     .login-button .btn:hover {
@@ -126,10 +127,11 @@
     .login-button .btn {
         background-color: green;
         color: white;
-        padding: 8px 15px;
+        padding: 6px 20px;
         text-decoration: none;
-        border-radius: 5px;
+        border-radius: 8px;
         font-size: 16px;
+        margin: 0px;
     }
 
     .login-button .btn:hover {

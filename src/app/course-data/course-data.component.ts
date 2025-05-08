@@ -2,6 +2,7 @@ import { Component, Input } from '@angular/core';
 import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
 import { ActivatedRoute } from '@angular/router';
 import { GoogleSheetsService } from '../services/googlesheets.service';
+import { response } from 'express';
 
 @Component({
   selector: 'app-course-data',
@@ -32,6 +33,7 @@ export class CourseDataComponent {
         this.fetchCourseData(this.courseId);
       }
     });
+    this.getBasicData();
   }
 
   fetchCourseData(courseId: string): void {
@@ -82,6 +84,28 @@ export class CourseDataComponent {
       (error: any) => console.error('Error fetching course details:', error)
     );
   }
+  basicYouTube: any[] = [];
+
+  getBasicData(): void {
+    this.googleSheetsService.getBasic().subscribe(
+      (response: any) => {
+        const basicData = response.values;
+        if (basicData?.length > 0) {
+          const headers = basicData[0];
+          const colIndex = (colName: string) => headers.indexOf(colName);
+  
+          this.basicYouTube = basicData.slice(1).map((course: any) => ({
+            videoTitle: course[colIndex('videoTitle')],
+            videoUrl: course[colIndex('videoUrl')],
+            courseLogo: course[colIndex('courseLogo')],
+          }));
+        }
+      },
+      error => console.error('Error fetching Basic sheet data:', error)
+    );
+  }
+  
+  
 
   private sanitizedUrls: { [key: string]: SafeResourceUrl } = {};
 
@@ -118,6 +142,7 @@ export class CourseDataComponent {
       }
     }
   }
+  
 }
 
 declare var bootstrap :any

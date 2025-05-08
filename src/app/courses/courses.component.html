@@ -4,7 +4,7 @@
     <app-coursecard [courses]="courses" ></app-coursecard>
     <div class="container button">
     <div class="row">
-        <div class="col-12 text-center">
+        <div class="col-12 text-center" *ngIf="allCourses.length > 4">
             <button type="submit" class="btn  btn-lg custom-btn" routerLink="/courses">View All Courses</button>
         </div>
     </div>
