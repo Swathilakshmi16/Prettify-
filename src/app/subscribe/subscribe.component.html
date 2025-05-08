@@ -34,17 +34,22 @@
                 required
               >
             </div>
+         
+
             <div class="mb-3 input">
               <label for="courseName" class="form-label">Course Name</label>
-              <input
-                type="text"
+              <select
                 class="form-control"
                 id="courseName"
-                placeholder="Enter the course name"
                 [(ngModel)]="courseName"
                 name="courseName"
                 required
               >
+                <option value="" disabled selected>Select a course</option>
+                <option *ngFor="let course of allcoursename" [value]="course">
+                  {{ course }}
+                </option>
+              </select>
             </div>
             <div class="popup-btn-div">
               <button type="button" class="popup-btn" (click)="openWhatsAppChat()">Submit</button>

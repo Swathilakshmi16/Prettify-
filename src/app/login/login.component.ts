@@ -11,19 +11,14 @@ import { Router } from '@angular/router';
 })
 export class LoginComponent {
   courseList: any;
-
-
   constructor(
-
     private googleSheetsService: GoogleSheetsService,
     private router : Router,
   ) {}
-
-
   userId:any;
   password:any;
-
-
+  users:any;
+  
   login(){
     if(this.userId && this.password){
       window.localStorage.setItem('userId', this.userId);
@@ -35,45 +30,7 @@ export class LoginComponent {
     }
   }
 
-
-  users:any;
-  // getAllClients(userId:any , password:any): void {
-  //   this.googleSheetsService.getAllClients().subscribe(
-  //     (response: any) => {
-  //       const sheetData = response.values;
-  //       if (sheetData.length > 0) {
-  //         const headers = sheetData[0];
-  //         const colIndex = (colName: string) => headers.indexOf(colName);
-  //         const data = sheetData.slice(1).map((course: any) => ({
-  //           userId: course[colIndex('userId')],
-  //           password: course[colIndex('password')],
-  //           courseList: course[colIndex('courseList')],
-            
-  //         }));
-  //         const storedUserId = window.localStorage.getItem('userId');
-  //         const storedPassword = window.localStorage.getItem('password');
-  
-  //         this.courseList = data.find(
-  //           (c: any) => c.userId === storedUserId && c.password === storedPassword
-  //         );
-  
-  //         if(this.courseList){
-  //            window.localStorage.setItem("courses",  JSON.stringify(this.courseList ? this.courseList.courseList : ''))
-  //            this.router.navigate(['/courses']);
-  //         }
-  //         else{
-  //           alert("userName and password are incorrect");
-  //         }
-  //       }
-  //     },
-  //     (error: any) =>{
-  //       alert("userName and password are incorrect");
-  //       console.error('Error fetching courses:', error)
-  //     }
-  //   );
-  // }
-
-  getAllClients(userId: any, password: any): void {
+  getAllClients(userId:any , password:any): void {
     this.googleSheetsService.getAllClients().subscribe(
       (response: any) => {
         const sheetData = response.values;
@@ -84,8 +41,8 @@ export class LoginComponent {
             userId: course[colIndex('userId')],
             password: course[colIndex('password')],
             courseList: course[colIndex('courseList')],
+            
           }));
-  
           const storedUserId = window.localStorage.getItem('userId');
           const storedPassword = window.localStorage.getItem('password');
   
@@ -93,23 +50,21 @@ export class LoginComponent {
             (c: any) => c.userId === storedUserId && c.password === storedPassword
           );
   
-          if (this.courseList) {
-           
-            window.localStorage.setItem(
-              "courses",
-              JSON.stringify(this.courseList.courseList)
-            );
-  
-            this.router.navigate(['/courses']);
-          } else {
-            alert("Username and password are incorrect");
+          if(this.courseList){
+             window.localStorage.setItem("courses",  JSON.stringify(this.courseList ? this.courseList.courseList : ''))
+             this.router.navigate(['/courses']);
+          }
+          else{
+            alert("userName and password are incorrect");
           }
         }
       },
-      (error: any) => {
-        alert("Username and password are incorrect");
-        console.error('Error fetching courses:', error);
+      (error: any) =>{
+        alert("userName and password are incorrect");
+        console.error('Error fetching courses:', error)
       }
     );
   }
+
+
 }
