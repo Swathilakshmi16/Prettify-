@@ -81,11 +81,34 @@
     margin-top: 40px;
     justify-content: space-around;
 }
+.course-card-align{
+    display: flex;
+    justify-content: center;
+}
 
 
 }
 
+.course-card-align {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
 
+.cencard {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+          align-items: center;
+  height: 100%; 
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%; 
+}
 
 @media only screen and (min-width:600px) and (max-width:1199px){
     #courses{
