@@ -20,6 +20,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { CourseDataComponent } from './course-data/course-data.component';
 import { FormsModule } from '@angular/forms';
 import { SubscribeComponent } from './subscribe/subscribe.component';
+import { DemoVideoComponent } from './demo-video/demo-video.component';
 
 
 
@@ -39,6 +40,7 @@ import { SubscribeComponent } from './subscribe/subscribe.component';
     CoursecardComponent,
     CourseDataComponent,
     SubscribeComponent,
+    DemoVideoComponent,
  
   ],
   imports: [
